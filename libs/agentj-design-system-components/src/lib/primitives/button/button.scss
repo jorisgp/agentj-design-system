@@ -1,69 +1,94 @@
 .agentjds-button {
   cursor: pointer;
-  border: none;
-  border-radius: 4px;
-  font-weight: 400;
-
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+  box-shadow: var(--agentj-shadow-sm, 0 1px 2px rgba(16, 24, 40, 0.08), 0 1px 1px rgba(16, 24, 40, 0.04));
+  color: var(--agentj-color-text, #1c2434);
+  background: var(--agentj-color-surface, #ffffff);
   outline: none;
   transition:
-    background-color 0.2s,
-    box-shadow 0.2s;
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.15s ease;
+
+  &:focus-visible {
+    box-shadow: 0 0 0 3px rgba(19, 93, 221, 0.24);
+  }
+
+  &:active:not(:disabled) {
+    transform: translateY(1px);
+  }
 
   &:disabled {
     cursor: not-allowed;
-    opacity: 0.5;
+    opacity: 0.55;
+    box-shadow: none;
   }
 
   &--primary {
-    background-color: #0066cc;
-    color: #fff;
+    color: #f9fbff;
+    background: linear-gradient(180deg, #2a78f6 0%, #135ddd 100%);
+    border-color: #1254ca;
 
     &:hover:not(:disabled) {
-      background-color: #0052a3;
+      background: linear-gradient(180deg, #3d85f8 0%, #1c66e5 100%);
+      box-shadow: var(--agentj-shadow-md, 0 8px 20px rgba(16, 24, 40, 0.1), 0 2px 8px rgba(16, 24, 40, 0.06));
     }
   }
 
   &--secondary {
-    background-color: #f0f0f0;
-    color: #333;
-    border: 1px solid #d0d0d0;
+    background-color: #f7f9fd;
+    color: #263148;
+    border-color: #cfd7e6;
 
     &:hover:not(:disabled) {
-      background-color: #e0e0e0;
+      background-color: #edf2fb;
+      border-color: #b9c6dc;
     }
   }
 
   &--danger {
-    background-color: #cc0000;
-    color: #fff;
+    color: #fff7f8;
+    border-color: #b61a2e;
+    background: linear-gradient(180deg, #da3a52 0%, #bf1d31 100%);
 
     &:hover:not(:disabled) {
-      background-color: #a30000;
+      background: linear-gradient(180deg, #e34f65 0%, #ca253b 100%);
+      box-shadow: var(--agentj-shadow-md, 0 8px 20px rgba(16, 24, 40, 0.1), 0 2px 8px rgba(16, 24, 40, 0.06));
     }
   }
 
   &--ghost {
     background-color: transparent;
-    color: #0066cc;
-    border: 1px solid #0066cc;
+    color: var(--agentj-color-primary, #135ddd);
+    border-color: #b8caef;
+    box-shadow: none;
 
     &:hover:not(:disabled) {
-      background-color: #f0f6ff;
+      background-color: #eef4ff;
+      border-color: #94afe4;
     }
   }
 
   &--sm {
+    min-height: 30px;
     padding: 6px 12px;
     font-size: 12px;
   }
 
   &--md {
+    min-height: 36px;
     padding: 8px 16px;
     font-size: 14px;
   }
 
   &--lg {
-    padding: 12px 24px;
+    min-height: 44px;
+    padding: 12px 22px;
     font-size: 16px;
   }
 }

@@ -2,44 +2,53 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 9999px;
+  border-radius: 999px;
+  border: 1px solid transparent;
   font-weight: 600;
   line-height: 1;
   letter-spacing: 0;
   white-space: nowrap;
+  box-shadow: var(--agentj-shadow-sm, 0 1px 2px rgba(16, 24, 40, 0.08), 0 1px 1px rgba(16, 24, 40, 0.04));
 }
 
 .agentjds-badge--sm {
+  min-height: 20px;
   padding: 4px 8px;
   font-size: 11px;
 }
 
 .agentjds-badge--md {
+  min-height: 24px;
   padding: 6px 10px;
   font-size: 12px;
 }
 
 .agentjds-badge--neutral {
-  background-color: #f0f0f0;
-  color: #2f2f2f;
+  background-color: #f2f4f8;
+  border-color: #d8dde7;
+  color: #364053;
 }
 
 .agentjds-badge--primary {
-  background-color: #e8f1ff;
-  color: #0052a3;
+  background-color: #eaf1ff;
+  border-color: #c2d4fa;
+  color: #1254ca;
 }
 
 .agentjds-badge--success {
-  background-color: #e8f7ec;
-  color: #1b7d3a;
+  background-color: #e9f8ef;
+  border-color: #bfdfca;
+  color: #1a8f4c;
 }
 
 .agentjds-badge--warning {
-  background-color: #fff6e5;
-  color: #9a6100;
+  background-color: #fff4dd;
+  border-color: #efd5a2;
+  color: #9a6200;
 }
 
 .agentjds-badge--danger {
-  background-color: #ffe8e8;
-  color: #a30000;
+  background-color: #ffecf0;
+  border-color: #f1c0c9;
+  color: #bf1d31;
 }

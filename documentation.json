@@ -104,6 +104,16 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: { name: \"info\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -139,16 +149,6 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  args: {\n    label: \"Priority\",\n    options: [\n      { label: \"Low\", value: \"low\" },\n      { label: \"Medium\", value: \"medium\" },\n      { label: \"High\", value: \"high\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-radio\n        [label]=\"label\"\n        [options]=\"options\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></agentjds-input-radio>\n    `,\n  }),\n}"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: { name: \"info\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
             },
             {
                 "name": "Disabled",
@@ -244,11 +244,11 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<ButtonComponent>",
-                "defaultValue": "{\n  component: ButtonComponent,\n  title: \"Primitives/Button\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    variant: {\n      control: { type: \"select\" },\n      options: [\"primary\", \"secondary\", \"danger\", \"ghost\"],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\", \"lg\"],\n    },\n    disabled: {\n      control: \"boolean\",\n    },\n    type: {\n      control: { type: \"select\" },\n      options: [\"button\", \"submit\", \"reset\"],\n    },\n  },\n}"
+                "type": "Meta<IconComponent>",
+                "defaultValue": "{\n  component: IconComponent,\n  title: \"Primitives/Icon\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    name: {\n      control: { type: \"select\" },\n      options: [\n        \"close\",\n        \"check\",\n        \"info\",\n        \"warning\",\n        \"error\",\n        \"search\",\n        \"menu\",\n        \"arrow-down\",\n        \"arrow-up\",\n        \"star\",\n        \"plus\",\n        \"minus\",\n      ],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"xs\", \"sm\", \"md\", \"lg\", \"xl\"],\n    },\n    color: {\n      control: { type: \"select\" },\n      options: [\n        \"primary\",\n        \"secondary\",\n        \"danger\",\n        \"success\",\n        \"warning\",\n        \"inherit\",\n      ],\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -259,6 +259,16 @@
                 "deprecationMessage": "",
                 "type": "Meta<ChatBubbleComponent>",
                 "defaultValue": "{\n  component: ChatBubbleComponent,\n  title: \"Primitives/Chat Bubble\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    direction: {\n      control: { type: \"select\" },\n      options: [\"incoming\", \"outgoing\"],\n    },\n    tone: {\n      control: { type: \"select\" },\n      options: [\"neutral\", \"primary\", \"success\", \"warning\"],\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<ButtonComponent>",
+                "defaultValue": "{\n  component: ButtonComponent,\n  title: \"Primitives/Button\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    variant: {\n      control: { type: \"select\" },\n      options: [\"primary\", \"secondary\", \"danger\", \"ghost\"],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\", \"lg\"],\n    },\n    disabled: {\n      control: \"boolean\",\n    },\n    type: {\n      control: { type: \"select\" },\n      options: [\"button\", \"submit\", \"reset\"],\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -299,16 +309,6 @@
                 "deprecationMessage": "",
                 "type": "Meta<InputRadioComponent>",
                 "defaultValue": "{\n  component: InputRadioComponent,\n  title: \"Primitives/Input Radio\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    disabled: { control: \"boolean\" },\n    required: { control: \"boolean\" },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<IconComponent>",
-                "defaultValue": "{\n  component: IconComponent,\n  title: \"Primitives/Icon\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    name: {\n      control: { type: \"select\" },\n      options: [\n        \"close\",\n        \"check\",\n        \"info\",\n        \"warning\",\n        \"error\",\n        \"search\",\n        \"menu\",\n        \"arrow-down\",\n        \"arrow-up\",\n        \"star\",\n        \"plus\",\n        \"minus\",\n      ],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"xs\", \"sm\", \"md\", \"lg\", \"xl\"],\n    },\n    color: {\n      control: { type: \"select\" },\n      options: [\n        \"primary\",\n        \"secondary\",\n        \"danger\",\n        \"success\",\n        \"warning\",\n        \"inherit\",\n      ],\n    },\n  },\n}"
             },
             {
                 "name": "Outgoing",
@@ -519,8 +519,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<ButtonComponent>",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "rawtype": "StoryObj<IconComponent>",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -532,6 +532,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<ChatBubbleComponent>",
                 "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<ButtonComponent>",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -576,17 +587,6 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<InputRadioComponent>",
                 "file": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<IconComponent>",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1127,13 +1127,13 @@
                     "kind": 184
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts": [
+            "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<ButtonComponent>",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                    "rawtype": "StoryObj<IconComponent>",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1147,6 +1147,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<ChatBubbleComponent>",
                     "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<ButtonComponent>",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1199,19 +1212,6 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<InputRadioComponent>",
                     "file": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
-            "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<IconComponent>",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",

@@ -1,8 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
-body,
-* {
-  font-family: "Open Sans", Calibri, sans-serif, serif;
+:root {
+  --agentj-color-bg: #f7f8fc;
+  --agentj-color-surface: #ffffff;
+  --agentj-color-border: #d7dce5;
+  --agentj-color-text: #1c2434;
+  --agentj-color-text-muted: #5a6478;
+  --agentj-color-primary: #135ddd;
+  --agentj-color-primary-strong: #104cb9;
+  --agentj-color-success: #1a8f4c;
+  --agentj-color-warning: #9a6200;
+  --agentj-color-danger: #bf1d31;
+  --agentj-shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.08), 0 1px 1px rgba(16, 24, 40, 0.04);
+  --agentj-shadow-md: 0 8px 20px rgba(16, 24, 40, 0.1), 0 2px 8px rgba(16, 24, 40, 0.06);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--agentj-color-text);
+  background:
+    radial-gradient(circle at 0 0, #f0f5ff 0%, transparent 46%),
+    radial-gradient(circle at 100% 100%, #f8f2ff 0%, transparent 38%),
+    var(--agentj-color-bg);
+  font-family: "Open Sans", Calibri, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: inherit;
 }

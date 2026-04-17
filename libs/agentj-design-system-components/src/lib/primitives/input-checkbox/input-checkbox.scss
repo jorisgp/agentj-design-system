@@ -1,46 +1,52 @@
 .agentjds-input-checkbox-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
+  padding: 10px 12px;
+  border: 1px solid #d8dde7;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: var(--agentj-shadow-sm, 0 1px 2px rgba(16, 24, 40, 0.08), 0 1px 1px rgba(16, 24, 40, 0.04));
 }
 
 .agentjds-input-checkbox {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   cursor: pointer;
+  color: var(--agentj-color-text, #1c2434);
 }
 
 .agentjds-input-checkbox--disabled {
-  opacity: 0.6;
+  opacity: 0.52;
   cursor: not-allowed;
 }
 
 .agentjds-input-checkbox__control {
-  width: 16px;
-  height: 16px;
-  accent-color: #0066cc;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--agentj-color-primary, #135ddd);
 }
 
 .agentjds-input-checkbox__label {
   font-size: 14px;
-  color: #1f1f1f;
+  color: var(--agentj-color-text, #1c2434);
   line-height: 1.3;
 }
 
 .agentjds-input-checkbox__required {
-  color: #cc0000;
+  color: var(--agentj-color-danger, #bf1d31);
   margin-left: 2px;
 }
 
 .agentjds-input-checkbox__error {
   margin: 0;
   font-size: 12px;
-  color: #cc0000;
+  color: var(--agentj-color-danger, #bf1d31);
 }
 
 .agentjds-input-checkbox__hint {
   margin: 0;
   font-size: 12px;
-  color: #666;
+  color: var(--agentj-color-text-muted, #5a6478);
 }

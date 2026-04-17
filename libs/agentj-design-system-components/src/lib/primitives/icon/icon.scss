@@ -4,6 +4,7 @@
   justify-content: center;
   flex-shrink: 0;
   user-select: none;
+  transition: color 0.18s ease;
 
   &--xs {
     width: 12px;
@@ -31,23 +32,23 @@
   }
 
   &--primary {
-    color: #0066cc;
+    color: var(--agentj-color-primary, #135ddd);
   }
 
   &--secondary {
-    color: #666;
+    color: var(--agentj-color-text-muted, #5a6478);
   }
 
   &--danger {
-    color: #cc0000;
+    color: var(--agentj-color-danger, #bf1d31);
   }
 
   &--success {
-    color: #00aa00;
+    color: var(--agentj-color-success, #1a8f4c);
   }
 
   &--warning {
-    color: #e6a800;
+    color: var(--agentj-color-warning, #9a6200);
   }
 
   &--inherit {
