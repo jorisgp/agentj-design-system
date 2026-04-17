@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: rots-tsl
   annotations:
-    jai.com/production-branch: main
+    agentj.com/production-branch: main
 spec:
   owner: rots-regie-op-techniek-en-storingen
   type: website

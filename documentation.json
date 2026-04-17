@@ -14,57 +14,57 @@
                 "name": "AllColors",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 16px; align-items: center;\">\n        <jaids-icon name=\"check\" size=\"md\" color=\"primary\"></jaids-icon>\n        <jaids-icon name=\"check\" size=\"md\" color=\"secondary\"></jaids-icon>\n        <jaids-icon name=\"check\" size=\"md\" color=\"danger\"></jaids-icon>\n        <jaids-icon name=\"check\" size=\"md\" color=\"success\"></jaids-icon>\n        <jaids-icon name=\"check\" size=\"md\" color=\"warning\"></jaids-icon>\n      </div>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 16px; align-items: center;\">\n        <agentjds-icon name=\"check\" size=\"md\" color=\"primary\"></agentjds-icon>\n        <agentjds-icon name=\"check\" size=\"md\" color=\"secondary\"></agentjds-icon>\n        <agentjds-icon name=\"check\" size=\"md\" color=\"danger\"></agentjds-icon>\n        <agentjds-icon name=\"check\" size=\"md\" color=\"success\"></agentjds-icon>\n        <agentjds-icon name=\"check\" size=\"md\" color=\"warning\"></agentjds-icon>\n      </div>\n    `,\n  }),\n}"
             },
             {
                 "name": "AllIcons",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;\">\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"close\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">close</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"check\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">check</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"info\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">info</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"warning\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">warning</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"error\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">error</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"search\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">search</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"menu\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">menu</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"arrow-down\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">arrow-down</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"arrow-up\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">arrow-up</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"star\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">star</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"plus\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">plus</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"minus\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">minus</span>\n        </div>\n      </div>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;\">\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"close\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">close</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"check\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">check</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"info\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">info</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"warning\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">warning</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"error\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">error</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"search\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">search</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"menu\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">menu</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"arrow-down\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">arrow-down</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"arrow-up\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">arrow-up</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"star\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">star</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"plus\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">plus</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"minus\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">minus</span>\n        </div>\n      </div>\n    `,\n  }),\n}"
             },
             {
                 "name": "AllSizes",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 12px; align-items: center;\">\n        <jaids-icon name=\"star\" size=\"xs\" color=\"warning\"></jaids-icon>\n        <jaids-icon name=\"star\" size=\"sm\" color=\"warning\"></jaids-icon>\n        <jaids-icon name=\"star\" size=\"md\" color=\"warning\"></jaids-icon>\n        <jaids-icon name=\"star\" size=\"lg\" color=\"warning\"></jaids-icon>\n        <jaids-icon name=\"star\" size=\"xl\" color=\"warning\"></jaids-icon>\n      </div>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 12px; align-items: center;\">\n        <agentjds-icon name=\"star\" size=\"xs\" color=\"warning\"></agentjds-icon>\n        <agentjds-icon name=\"star\" size=\"sm\" color=\"warning\"></agentjds-icon>\n        <agentjds-icon name=\"star\" size=\"md\" color=\"warning\"></agentjds-icon>\n        <agentjds-icon name=\"star\" size=\"lg\" color=\"warning\"></agentjds-icon>\n        <agentjds-icon name=\"star\" size=\"xl\" color=\"warning\"></agentjds-icon>\n      </div>\n    `,\n  }),\n}"
             },
             {
                 "name": "Check",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { name: \"check\", size: \"md\", color: \"success\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></jaids-icon>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { name: \"check\", size: \"md\", color: \"success\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
             },
             {
                 "name": "Close",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { name: \"close\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></jaids-icon>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { name: \"close\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
             },
             {
                 "name": "config",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "apps/jai-design-system/.storybook/main.ts",
+                "file": "apps/agentj-design-system/.storybook/main.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "StorybookConfig",
@@ -74,157 +74,157 @@
                 "name": "Conversation",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <jaids-chat-bubble\n          author=\"Alex\"\n          timestamp=\"10:34\"\n          message=\"Can we ship the dropdown variant in this sprint?\"\n          direction=\"incoming\"\n          tone=\"neutral\"\n        ></jaids-chat-bubble>\n\n        <jaids-chat-bubble\n          author=\"You\"\n          timestamp=\"10:35\"\n          message=\"Yes, let us include radio + checkbox too.\"\n          direction=\"outgoing\"\n          tone=\"primary\"\n        ></jaids-chat-bubble>\n\n        <jaids-chat-bubble\n          author=\"Alex\"\n          timestamp=\"10:36\"\n          message=\"Perfect. I will review the Storybook examples.\"\n          direction=\"incoming\"\n          tone=\"success\"\n        ></jaids-chat-bubble>\n      </div>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <agentjds-chat-bubble\n          author=\"Alex\"\n          timestamp=\"10:34\"\n          message=\"Can we ship the dropdown variant in this sprint?\"\n          direction=\"incoming\"\n          tone=\"neutral\"\n        ></agentjds-chat-bubble>\n\n        <agentjds-chat-bubble\n          author=\"You\"\n          timestamp=\"10:35\"\n          message=\"Yes, let us include radio + checkbox too.\"\n          direction=\"outgoing\"\n          tone=\"primary\"\n        ></agentjds-chat-bubble>\n\n        <agentjds-chat-bubble\n          author=\"Alex\"\n          timestamp=\"10:36\"\n          message=\"Perfect. I will review the Storybook examples.\"\n          direction=\"incoming\"\n          tone=\"success\"\n        ></agentjds-chat-bubble>\n      </div>\n    `,\n  }),\n}"
             },
             {
                 "name": "Danger",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { variant: \"danger\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Delete</jaids-button>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { variant: \"danger\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Delete</agentjds-button>`,\n  }),\n}"
             },
             {
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { text: \"Badge\", variant: \"neutral\", size: \"md\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-badge [text]=\"text\" [variant]=\"variant\" [size]=\"size\"></jaids-badge>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { text: \"Badge\", variant: \"neutral\", size: \"md\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-badge [text]=\"text\" [variant]=\"variant\" [size]=\"size\"></agentjds-badge>`,\n  }),\n}"
             },
             {
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { name: \"info\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></jaids-icon>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { type: \"text\", size: \"md\", placeholder: \"Enter text...\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
             },
             {
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: \"I accept the terms and conditions\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <jaids-input-checkbox\n        [label]=\"label\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></jaids-input-checkbox>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    label: \"I accept the terms and conditions\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-checkbox\n        [label]=\"label\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></agentjds-input-checkbox>\n    `,\n  }),\n}"
             },
             {
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: \"Status\",\n    placeholder: \"Select status\",\n    size: \"md\",\n    options: [\n      { label: \"Open\", value: \"open\" },\n      { label: \"In Progress\", value: \"progress\" },\n      { label: \"Done\", value: \"done\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <jaids-input-dropdown\n        [label]=\"label\"\n        [placeholder]=\"placeholder\"\n        [size]=\"size\"\n        [options]=\"options\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></jaids-input-dropdown>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    label: \"Status\",\n    placeholder: \"Select status\",\n    size: \"md\",\n    options: [\n      { label: \"Open\", value: \"open\" },\n      { label: \"In Progress\", value: \"progress\" },\n      { label: \"Done\", value: \"done\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-dropdown\n        [label]=\"label\"\n        [placeholder]=\"placeholder\"\n        [size]=\"size\"\n        [options]=\"options\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></agentjds-input-dropdown>\n    `,\n  }),\n}"
             },
             {
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: \"Priority\",\n    options: [\n      { label: \"Low\", value: \"low\" },\n      { label: \"Medium\", value: \"medium\" },\n      { label: \"High\", value: \"high\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <jaids-input-radio\n        [label]=\"label\"\n        [options]=\"options\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></jaids-input-radio>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    label: \"Priority\",\n    options: [\n      { label: \"Low\", value: \"low\" },\n      { label: \"Medium\", value: \"medium\" },\n      { label: \"High\", value: \"high\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-radio\n        [label]=\"label\"\n        [options]=\"options\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></agentjds-input-radio>\n    `,\n  }),\n}"
             },
             {
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { type: \"text\", size: \"md\", placeholder: \"Enter text...\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-input [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\"></jaids-input>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { name: \"info\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
             },
             {
                 "name": "Disabled",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { variant: \"primary\", size: \"md\", disabled: true },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Disabled</jaids-button>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { variant: \"primary\", size: \"md\", disabled: true },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Disabled</agentjds-button>`,\n  }),\n}"
             },
             {
                 "name": "Disabled",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { size: \"md\", placeholder: \"Disabled\", disabled: true },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-input [size]=\"size\" [placeholder]=\"placeholder\" [disabled]=\"disabled\"></jaids-input>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { size: \"md\", placeholder: \"Disabled\", disabled: true },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [size]=\"size\" [placeholder]=\"placeholder\" [disabled]=\"disabled\"></agentjds-input>`,\n  }),\n}"
             },
             {
                 "name": "Error",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { name: \"error\", size: \"md\", color: \"danger\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></jaids-icon>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { name: \"error\", size: \"md\", color: \"danger\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
             },
             {
                 "name": "Ghost",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { variant: \"ghost\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Ghost</jaids-button>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { variant: \"ghost\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Ghost</agentjds-button>`,\n  }),\n}"
             },
             {
                 "name": "Incoming",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    author: \"Alex\",\n    timestamp: \"10:34\",\n    message: \"Can we ship the dropdown variant in this sprint?\",\n    direction: \"incoming\",\n    tone: \"neutral\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <jaids-chat-bubble\n          [author]=\"author\"\n          [timestamp]=\"timestamp\"\n          [message]=\"message\"\n          [direction]=\"direction\"\n          [tone]=\"tone\"\n        ></jaids-chat-bubble>\n      </div>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    author: \"Alex\",\n    timestamp: \"10:34\",\n    message: \"Can we ship the dropdown variant in this sprint?\",\n    direction: \"incoming\",\n    tone: \"neutral\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <agentjds-chat-bubble\n          [author]=\"author\"\n          [timestamp]=\"timestamp\"\n          [message]=\"message\"\n          [direction]=\"direction\"\n          [tone]=\"tone\"\n        ></agentjds-chat-bubble>\n      </div>\n    `,\n  }),\n}"
             },
             {
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { variant: \"primary\", size: \"lg\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Large</jaids-button>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { variant: \"primary\", size: \"lg\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Large</agentjds-button>`,\n  }),\n}"
             },
             {
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { size: \"lg\", placeholder: \"Large input\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-input [size]=\"size\" [placeholder]=\"placeholder\"></jaids-input>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { size: \"lg\", placeholder: \"Large input\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
             },
             {
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/primitives.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta",
@@ -234,7 +234,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<BadgeComponent>",
@@ -244,7 +244,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ButtonComponent>",
@@ -254,17 +254,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<IconComponent>",
-                "defaultValue": "{\n  component: IconComponent,\n  title: \"Primitives/Icon\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    name: {\n      control: { type: \"select\" },\n      options: [\n        \"close\",\n        \"check\",\n        \"info\",\n        \"warning\",\n        \"error\",\n        \"search\",\n        \"menu\",\n        \"arrow-down\",\n        \"arrow-up\",\n        \"star\",\n        \"plus\",\n        \"minus\",\n      ],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"xs\", \"sm\", \"md\", \"lg\", \"xl\"],\n    },\n    color: {\n      control: { type: \"select\" },\n      options: [\n        \"primary\",\n        \"secondary\",\n        \"danger\",\n        \"success\",\n        \"warning\",\n        \"inherit\",\n      ],\n    },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ChatBubbleComponent>",
@@ -274,7 +264,17 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<InputComponent>",
+                "defaultValue": "{\n  component: InputComponent,\n  title: \"Primitives/Input\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    type: {\n      control: { type: \"select\" },\n      options: [\"text\", \"email\", \"password\", \"number\", \"tel\", \"url\"],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\", \"lg\"],\n    },\n    disabled: { control: \"boolean\" },\n    readonly: { control: \"boolean\" },\n    required: { control: \"boolean\" },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<InputCheckboxComponent>",
@@ -284,7 +284,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<InputDropdownComponent>",
@@ -294,7 +294,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<InputRadioComponent>",
@@ -304,191 +304,191 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<InputComponent>",
-                "defaultValue": "{\n  component: InputComponent,\n  title: \"Primitives/Input\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    type: {\n      control: { type: \"select\" },\n      options: [\"text\", \"email\", \"password\", \"number\", \"tel\", \"url\"],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\", \"lg\"],\n    },\n    disabled: { control: \"boolean\" },\n    readonly: { control: \"boolean\" },\n    required: { control: \"boolean\" },\n  },\n}"
+                "type": "Meta<IconComponent>",
+                "defaultValue": "{\n  component: IconComponent,\n  title: \"Primitives/Icon\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    name: {\n      control: { type: \"select\" },\n      options: [\n        \"close\",\n        \"check\",\n        \"info\",\n        \"warning\",\n        \"error\",\n        \"search\",\n        \"menu\",\n        \"arrow-down\",\n        \"arrow-up\",\n        \"star\",\n        \"plus\",\n        \"minus\",\n      ],\n    },\n    size: {\n      control: { type: \"select\" },\n      options: [\"xs\", \"sm\", \"md\", \"lg\", \"xl\"],\n    },\n    color: {\n      control: { type: \"select\" },\n      options: [\n        \"primary\",\n        \"secondary\",\n        \"danger\",\n        \"success\",\n        \"warning\",\n        \"inherit\",\n      ],\n    },\n  },\n}"
             },
             {
                 "name": "Outgoing",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    author: \"You\",\n    timestamp: \"10:35\",\n    message: \"Yes, let us include radio + checkbox too.\",\n    direction: \"outgoing\",\n    tone: \"primary\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <jaids-chat-bubble\n          [author]=\"author\"\n          [timestamp]=\"timestamp\"\n          [message]=\"message\"\n          [direction]=\"direction\"\n          [tone]=\"tone\"\n        ></jaids-chat-bubble>\n      </div>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    author: \"You\",\n    timestamp: \"10:35\",\n    message: \"Yes, let us include radio + checkbox too.\",\n    direction: \"outgoing\",\n    tone: \"primary\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <agentjds-chat-bubble\n          [author]=\"author\"\n          [timestamp]=\"timestamp\"\n          [message]=\"message\"\n          [direction]=\"direction\"\n          [tone]=\"tone\"\n        ></agentjds-chat-bubble>\n      </div>\n    `,\n  }),\n}"
             },
             {
                 "name": "Playground",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/primitives.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: grid; gap: 20px; max-width: 520px;\">\n        <section style=\"display: flex; align-items: center; gap: 8px; flex-wrap: wrap;\">\n          <jaids-badge text=\"Neutral\"></jaids-badge>\n          <jaids-badge text=\"In Progress\" variant=\"primary\"></jaids-badge>\n          <jaids-badge text=\"Blocked\" variant=\"danger\"></jaids-badge>\n        </section>\n\n        <jaids-input-dropdown\n          label=\"Team\"\n          placeholder=\"Select team\"\n          [options]=\"[\n            { label: 'Field Service', value: 'fs' },\n            { label: 'Platform', value: 'platform' },\n            { label: 'Design', value: 'design' }\n          ]\"\n        ></jaids-input-dropdown>\n\n        <jaids-input-radio\n          label=\"Environment\"\n          [options]=\"[\n            { label: 'Development', value: 'dev' },\n            { label: 'Staging', value: 'staging' },\n            { label: 'Production', value: 'prod' }\n          ]\"\n        ></jaids-input-radio>\n\n        <jaids-input-checkbox\n          label=\"Enable notifications\"\n          hint=\"You can change this later in settings.\"\n        ></jaids-input-checkbox>\n      </div>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: grid; gap: 20px; max-width: 520px;\">\n        <section style=\"display: flex; align-items: center; gap: 8px; flex-wrap: wrap;\">\n          <agentjds-badge text=\"Neutral\"></agentjds-badge>\n          <agentjds-badge text=\"In Progress\" variant=\"primary\"></agentjds-badge>\n          <agentjds-badge text=\"Blocked\" variant=\"danger\"></agentjds-badge>\n        </section>\n\n        <agentjds-input-dropdown\n          label=\"Team\"\n          placeholder=\"Select team\"\n          [options]=\"[\n            { label: 'Field Service', value: 'fs' },\n            { label: 'Platform', value: 'platform' },\n            { label: 'Design', value: 'design' }\n          ]\"\n        ></agentjds-input-dropdown>\n\n        <agentjds-input-radio\n          label=\"Environment\"\n          [options]=\"[\n            { label: 'Development', value: 'dev' },\n            { label: 'Staging', value: 'staging' },\n            { label: 'Production', value: 'prod' }\n          ]\"\n        ></agentjds-input-radio>\n\n        <agentjds-input-checkbox\n          label=\"Enable notifications\"\n          hint=\"You can change this later in settings.\"\n        ></agentjds-input-checkbox>\n      </div>\n    `,\n  }),\n}"
             },
             {
                 "name": "preview",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "apps/jai-design-system/.storybook/preview.ts",
+                "file": "apps/agentj-design-system/.storybook/preview.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Preview",
-                "defaultValue": "{\n  parameters: {\n    options: {\n      storySort: {\n        method: 'alphabetical',\n        order: ['Jai', 'FieldServices', '*'],\n      },\n    },\n  },\n}"
+                "defaultValue": "{\n  parameters: {\n    options: {\n      storySort: {\n        method: \"alphabetical\",\n        order: [\"Agentj\", \"FieldServices\", \"*\"],\n      },\n    },\n  },\n}"
             },
             {
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { variant: \"primary\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Primary</jaids-button>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { variant: \"primary\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Primary</agentjds-button>`,\n  }),\n}"
             },
             {
                 "name": "Required",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: \"email\",\n    size: \"md\",\n    label: \"Email\",\n    placeholder: \"you@example.com\",\n    required: true,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\" [required]=\"required\"></jaids-input>`,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    type: \"email\",\n    size: \"md\",\n    label: \"Email\",\n    placeholder: \"you@example.com\",\n    required: true,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\" [required]=\"required\"></agentjds-input>`,\n  }),\n}"
             },
             {
                 "name": "Search",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { name: \"search\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></jaids-icon>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { name: \"search\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
             },
             {
                 "name": "Secondary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { variant: \"secondary\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Secondary</jaids-button>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { variant: \"secondary\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Secondary</agentjds-button>`,\n  }),\n}"
             },
             {
                 "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { variant: \"primary\", size: \"sm\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Small</jaids-button>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { variant: \"primary\", size: \"sm\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Small</agentjds-button>`,\n  }),\n}"
             },
             {
                 "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { size: \"sm\", placeholder: \"Small input\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-input [size]=\"size\" [placeholder]=\"placeholder\"></jaids-input>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { size: \"sm\", placeholder: \"Small input\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
             },
             {
                 "name": "Star",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { name: \"star\", size: \"lg\", color: \"warning\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></jaids-icon>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { name: \"star\", size: \"lg\", color: \"warning\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
             },
             {
                 "name": "StatusVariants",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 8px; align-items: center; flex-wrap: wrap;\">\n        <jaids-badge text=\"Neutral\" variant=\"neutral\"></jaids-badge>\n        <jaids-badge text=\"Primary\" variant=\"primary\"></jaids-badge>\n        <jaids-badge text=\"Success\" variant=\"success\"></jaids-badge>\n        <jaids-badge text=\"Warning\" variant=\"warning\"></jaids-badge>\n        <jaids-badge text=\"Danger\" variant=\"danger\"></jaids-badge>\n      </div>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 8px; align-items: center; flex-wrap: wrap;\">\n        <agentjds-badge text=\"Neutral\" variant=\"neutral\"></agentjds-badge>\n        <agentjds-badge text=\"Primary\" variant=\"primary\"></agentjds-badge>\n        <agentjds-badge text=\"Success\" variant=\"success\"></agentjds-badge>\n        <agentjds-badge text=\"Warning\" variant=\"warning\"></agentjds-badge>\n        <agentjds-badge text=\"Danger\" variant=\"danger\"></agentjds-badge>\n      </div>\n    `,\n  }),\n}"
             },
             {
                 "name": "Warning",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: { name: \"warning\", size: \"md\", color: \"warning\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></jaids-icon>`,\n  }),\n}"
+                "defaultValue": "{\n  args: { name: \"warning\", size: \"md\", color: \"warning\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
             },
             {
                 "name": "WithError",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: \"Assignee\",\n    placeholder: \"Select assignee\",\n    error: \"Please select an assignee\",\n    options: [\n      { label: \"Joris\", value: \"joris\" },\n      { label: \"Alex\", value: \"alex\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <jaids-input-dropdown\n        [label]=\"label\"\n        [placeholder]=\"placeholder\"\n        [error]=\"error\"\n        [options]=\"options\"\n      ></jaids-input-dropdown>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    type: \"email\",\n    size: \"md\",\n    label: \"Email\",\n    error: \"Please enter a valid email\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [error]=\"error\"></agentjds-input>`,\n  }),\n}"
             },
             {
                 "name": "WithError",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: \"Approval\",\n    error: \"Please choose an option\",\n    options: [\n      { label: \"Approve\", value: \"approve\" },\n      { label: \"Reject\", value: \"reject\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <jaids-input-radio\n        [label]=\"label\"\n        [options]=\"options\"\n        [error]=\"error\"\n      ></jaids-input-radio>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    label: \"Assignee\",\n    placeholder: \"Select assignee\",\n    error: \"Please select an assignee\",\n    options: [\n      { label: \"Joris\", value: \"joris\" },\n      { label: \"Alex\", value: \"alex\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-dropdown\n        [label]=\"label\"\n        [placeholder]=\"placeholder\"\n        [error]=\"error\"\n        [options]=\"options\"\n      ></agentjds-input-dropdown>\n    `,\n  }),\n}"
             },
             {
                 "name": "WithError",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: \"email\",\n    size: \"md\",\n    label: \"Email\",\n    error: \"Please enter a valid email\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [error]=\"error\"></jaids-input>`,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    label: \"Approval\",\n    error: \"Please choose an option\",\n    options: [\n      { label: \"Approve\", value: \"approve\" },\n      { label: \"Reject\", value: \"reject\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-radio\n        [label]=\"label\"\n        [options]=\"options\"\n        [error]=\"error\"\n      ></agentjds-input-radio>\n    `,\n  }),\n}"
             },
             {
                 "name": "WithHint",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: \"Subscribe to release updates\",\n    hint: \"We send one update per sprint.\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <jaids-input-checkbox\n        [label]=\"label\"\n        [hint]=\"hint\"\n      ></jaids-input-checkbox>\n    `,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    type: \"password\",\n    size: \"md\",\n    label: \"Password\",\n    hint: \"At least 8 characters\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [hint]=\"hint\"></agentjds-input>`,\n  }),\n}"
             },
             {
                 "name": "WithHint",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: \"password\",\n    size: \"md\",\n    label: \"Password\",\n    hint: \"At least 8 characters\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [hint]=\"hint\"></jaids-input>`,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    label: \"Subscribe to release updates\",\n    hint: \"We send one update per sprint.\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-checkbox\n        [label]=\"label\"\n        [hint]=\"hint\"\n      ></agentjds-input-checkbox>\n    `,\n  }),\n}"
             },
             {
                 "name": "WithLabel",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    type: \"text\",\n    size: \"md\",\n    label: \"Username\",\n    placeholder: \"Enter username\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\"></jaids-input>`,\n  }),\n}"
+                "defaultValue": "{\n  args: {\n    type: \"text\",\n    size: \"md\",\n    label: \"Username\",\n    placeholder: \"Enter username\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
             }
         ],
         "functions": [],
@@ -498,7 +498,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj",
-                "file": "libs/jai-design-system-components/src/lib/primitives/primitives.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -509,7 +509,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<BadgeComponent>",
-                "file": "libs/jai-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -520,18 +520,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<ButtonComponent>",
-                "file": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<IconComponent>",
-                "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -542,40 +531,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<ChatBubbleComponent>",
-                "file": "libs/jai-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<InputCheckboxComponent>",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<InputDropdownComponent>",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<InputRadioComponent>",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -586,7 +542,51 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<InputComponent>",
-                "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<InputCheckboxComponent>",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<InputDropdownComponent>",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<InputRadioComponent>",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<IconComponent>",
+                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -595,82 +595,82 @@
         ],
         "enumerations": [],
         "groupedVariables": {
-            "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts": [
+            "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts": [
                 {
                     "name": "AllColors",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 16px; align-items: center;\">\n        <jaids-icon name=\"check\" size=\"md\" color=\"primary\"></jaids-icon>\n        <jaids-icon name=\"check\" size=\"md\" color=\"secondary\"></jaids-icon>\n        <jaids-icon name=\"check\" size=\"md\" color=\"danger\"></jaids-icon>\n        <jaids-icon name=\"check\" size=\"md\" color=\"success\"></jaids-icon>\n        <jaids-icon name=\"check\" size=\"md\" color=\"warning\"></jaids-icon>\n      </div>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 16px; align-items: center;\">\n        <agentjds-icon name=\"check\" size=\"md\" color=\"primary\"></agentjds-icon>\n        <agentjds-icon name=\"check\" size=\"md\" color=\"secondary\"></agentjds-icon>\n        <agentjds-icon name=\"check\" size=\"md\" color=\"danger\"></agentjds-icon>\n        <agentjds-icon name=\"check\" size=\"md\" color=\"success\"></agentjds-icon>\n        <agentjds-icon name=\"check\" size=\"md\" color=\"warning\"></agentjds-icon>\n      </div>\n    `,\n  }),\n}"
                 },
                 {
                     "name": "AllIcons",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;\">\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"close\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">close</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"check\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">check</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"info\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">info</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"warning\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">warning</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"error\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">error</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"search\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">search</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"menu\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">menu</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"arrow-down\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">arrow-down</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"arrow-up\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">arrow-up</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"star\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">star</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"plus\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">plus</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <jaids-icon name=\"minus\" size=\"md\"></jaids-icon>\n          <span style=\"font-size: 12px;\">minus</span>\n        </div>\n      </div>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;\">\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"close\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">close</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"check\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">check</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"info\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">info</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"warning\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">warning</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"error\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">error</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"search\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">search</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"menu\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">menu</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"arrow-down\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">arrow-down</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"arrow-up\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">arrow-up</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"star\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">star</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"plus\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">plus</span>\n        </div>\n        <div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px;\">\n          <agentjds-icon name=\"minus\" size=\"md\"></agentjds-icon>\n          <span style=\"font-size: 12px;\">minus</span>\n        </div>\n      </div>\n    `,\n  }),\n}"
                 },
                 {
                     "name": "AllSizes",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 12px; align-items: center;\">\n        <jaids-icon name=\"star\" size=\"xs\" color=\"warning\"></jaids-icon>\n        <jaids-icon name=\"star\" size=\"sm\" color=\"warning\"></jaids-icon>\n        <jaids-icon name=\"star\" size=\"md\" color=\"warning\"></jaids-icon>\n        <jaids-icon name=\"star\" size=\"lg\" color=\"warning\"></jaids-icon>\n        <jaids-icon name=\"star\" size=\"xl\" color=\"warning\"></jaids-icon>\n      </div>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 12px; align-items: center;\">\n        <agentjds-icon name=\"star\" size=\"xs\" color=\"warning\"></agentjds-icon>\n        <agentjds-icon name=\"star\" size=\"sm\" color=\"warning\"></agentjds-icon>\n        <agentjds-icon name=\"star\" size=\"md\" color=\"warning\"></agentjds-icon>\n        <agentjds-icon name=\"star\" size=\"lg\" color=\"warning\"></agentjds-icon>\n        <agentjds-icon name=\"star\" size=\"xl\" color=\"warning\"></agentjds-icon>\n      </div>\n    `,\n  }),\n}"
                 },
                 {
                     "name": "Check",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { name: \"check\", size: \"md\", color: \"success\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></jaids-icon>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { name: \"check\", size: \"md\", color: \"success\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
                 },
                 {
                     "name": "Close",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { name: \"close\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></jaids-icon>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { name: \"close\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
                 },
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { name: \"info\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></jaids-icon>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { name: \"info\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
                 },
                 {
                     "name": "Error",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { name: \"error\", size: \"md\", color: \"danger\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></jaids-icon>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { name: \"error\", size: \"md\", color: \"danger\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
                 },
                 {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<IconComponent>",
@@ -680,71 +680,71 @@
                     "name": "Search",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { name: \"search\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></jaids-icon>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { name: \"search\", size: \"md\", color: \"inherit\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
                 },
                 {
                     "name": "Star",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { name: \"star\", size: \"lg\", color: \"warning\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></jaids-icon>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { name: \"star\", size: \"lg\", color: \"warning\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
                 },
                 {
                     "name": "Warning",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { name: \"warning\", size: \"md\", color: \"warning\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></jaids-icon>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { name: \"warning\", size: \"md\", color: \"warning\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
                 }
             ],
-            "apps/jai-design-system/.storybook/main.ts": [
+            "apps/agentj-design-system/.storybook/main.ts": [
                 {
                     "name": "config",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "apps/jai-design-system/.storybook/main.ts",
+                    "file": "apps/agentj-design-system/.storybook/main.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "StorybookConfig",
                     "defaultValue": "{\n  stories: [\"../../../libs/**/*.stories.@(ts|mdx)\"],\n  addons: [],\n  framework: {\n    name: \"@storybook/angular\",\n    options: {},\n  },\n}"
                 }
             ],
-            "libs/jai-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts": [
+            "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts": [
                 {
                     "name": "Conversation",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <jaids-chat-bubble\n          author=\"Alex\"\n          timestamp=\"10:34\"\n          message=\"Can we ship the dropdown variant in this sprint?\"\n          direction=\"incoming\"\n          tone=\"neutral\"\n        ></jaids-chat-bubble>\n\n        <jaids-chat-bubble\n          author=\"You\"\n          timestamp=\"10:35\"\n          message=\"Yes, let us include radio + checkbox too.\"\n          direction=\"outgoing\"\n          tone=\"primary\"\n        ></jaids-chat-bubble>\n\n        <jaids-chat-bubble\n          author=\"Alex\"\n          timestamp=\"10:36\"\n          message=\"Perfect. I will review the Storybook examples.\"\n          direction=\"incoming\"\n          tone=\"success\"\n        ></jaids-chat-bubble>\n      </div>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <agentjds-chat-bubble\n          author=\"Alex\"\n          timestamp=\"10:34\"\n          message=\"Can we ship the dropdown variant in this sprint?\"\n          direction=\"incoming\"\n          tone=\"neutral\"\n        ></agentjds-chat-bubble>\n\n        <agentjds-chat-bubble\n          author=\"You\"\n          timestamp=\"10:35\"\n          message=\"Yes, let us include radio + checkbox too.\"\n          direction=\"outgoing\"\n          tone=\"primary\"\n        ></agentjds-chat-bubble>\n\n        <agentjds-chat-bubble\n          author=\"Alex\"\n          timestamp=\"10:36\"\n          message=\"Perfect. I will review the Storybook examples.\"\n          direction=\"incoming\"\n          tone=\"success\"\n        ></agentjds-chat-bubble>\n      </div>\n    `,\n  }),\n}"
                 },
                 {
                     "name": "Incoming",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    author: \"Alex\",\n    timestamp: \"10:34\",\n    message: \"Can we ship the dropdown variant in this sprint?\",\n    direction: \"incoming\",\n    tone: \"neutral\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <jaids-chat-bubble\n          [author]=\"author\"\n          [timestamp]=\"timestamp\"\n          [message]=\"message\"\n          [direction]=\"direction\"\n          [tone]=\"tone\"\n        ></jaids-chat-bubble>\n      </div>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    author: \"Alex\",\n    timestamp: \"10:34\",\n    message: \"Can we ship the dropdown variant in this sprint?\",\n    direction: \"incoming\",\n    tone: \"neutral\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <agentjds-chat-bubble\n          [author]=\"author\"\n          [timestamp]=\"timestamp\"\n          [message]=\"message\"\n          [direction]=\"direction\"\n          [tone]=\"tone\"\n        ></agentjds-chat-bubble>\n      </div>\n    `,\n  }),\n}"
                 },
                 {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ChatBubbleComponent>",
@@ -754,59 +754,59 @@
                     "name": "Outgoing",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    author: \"You\",\n    timestamp: \"10:35\",\n    message: \"Yes, let us include radio + checkbox too.\",\n    direction: \"outgoing\",\n    tone: \"primary\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <jaids-chat-bubble\n          [author]=\"author\"\n          [timestamp]=\"timestamp\"\n          [message]=\"message\"\n          [direction]=\"direction\"\n          [tone]=\"tone\"\n        ></jaids-chat-bubble>\n      </div>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    author: \"You\",\n    timestamp: \"10:35\",\n    message: \"Yes, let us include radio + checkbox too.\",\n    direction: \"outgoing\",\n    tone: \"primary\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <agentjds-chat-bubble\n          [author]=\"author\"\n          [timestamp]=\"timestamp\"\n          [message]=\"message\"\n          [direction]=\"direction\"\n          [tone]=\"tone\"\n        ></agentjds-chat-bubble>\n      </div>\n    `,\n  }),\n}"
                 }
             ],
-            "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts": [
+            "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts": [
                 {
                     "name": "Danger",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { variant: \"danger\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Delete</jaids-button>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { variant: \"danger\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Delete</agentjds-button>`,\n  }),\n}"
                 },
                 {
                     "name": "Disabled",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { variant: \"primary\", size: \"md\", disabled: true },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Disabled</jaids-button>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { variant: \"primary\", size: \"md\", disabled: true },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Disabled</agentjds-button>`,\n  }),\n}"
                 },
                 {
                     "name": "Ghost",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { variant: \"ghost\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Ghost</jaids-button>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { variant: \"ghost\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Ghost</agentjds-button>`,\n  }),\n}"
                 },
                 {
                     "name": "Large",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { variant: \"primary\", size: \"lg\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Large</jaids-button>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { variant: \"primary\", size: \"lg\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Large</agentjds-button>`,\n  }),\n}"
                 },
                 {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ButtonComponent>",
@@ -816,49 +816,49 @@
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { variant: \"primary\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Primary</jaids-button>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { variant: \"primary\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Primary</agentjds-button>`,\n  }),\n}"
                 },
                 {
                     "name": "Secondary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { variant: \"secondary\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Secondary</jaids-button>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { variant: \"secondary\", size: \"md\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Secondary</agentjds-button>`,\n  }),\n}"
                 },
                 {
                     "name": "Small",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { variant: \"primary\", size: \"sm\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Small</jaids-button>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { variant: \"primary\", size: \"sm\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Small</agentjds-button>`,\n  }),\n}"
                 }
             ],
-            "libs/jai-design-system-components/src/lib/primitives/badge/badge.stories.ts": [
+            "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { text: \"Badge\", variant: \"neutral\", size: \"md\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-badge [text]=\"text\" [variant]=\"variant\" [size]=\"size\"></jaids-badge>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { text: \"Badge\", variant: \"neutral\", size: \"md\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-badge [text]=\"text\" [variant]=\"variant\" [size]=\"size\"></agentjds-badge>`,\n  }),\n}"
                 },
                 {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<BadgeComponent>",
@@ -868,145 +868,49 @@
                     "name": "StatusVariants",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 8px; align-items: center; flex-wrap: wrap;\">\n        <jaids-badge text=\"Neutral\" variant=\"neutral\"></jaids-badge>\n        <jaids-badge text=\"Primary\" variant=\"primary\"></jaids-badge>\n        <jaids-badge text=\"Success\" variant=\"success\"></jaids-badge>\n        <jaids-badge text=\"Warning\" variant=\"warning\"></jaids-badge>\n        <jaids-badge text=\"Danger\" variant=\"danger\"></jaids-badge>\n      </div>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 8px; align-items: center; flex-wrap: wrap;\">\n        <agentjds-badge text=\"Neutral\" variant=\"neutral\"></agentjds-badge>\n        <agentjds-badge text=\"Primary\" variant=\"primary\"></agentjds-badge>\n        <agentjds-badge text=\"Success\" variant=\"success\"></agentjds-badge>\n        <agentjds-badge text=\"Warning\" variant=\"warning\"></agentjds-badge>\n        <agentjds-badge text=\"Danger\" variant=\"danger\"></agentjds-badge>\n      </div>\n    `,\n  }),\n}"
                 }
             ],
-            "libs/jai-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts": [
+            "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: \"I accept the terms and conditions\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <jaids-input-checkbox\n        [label]=\"label\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></jaids-input-checkbox>\n    `,\n  }),\n}"
-                },
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<InputCheckboxComponent>",
-                    "defaultValue": "{\n  component: InputCheckboxComponent,\n  title: \"Primitives/Input Checkbox\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    disabled: { control: \"boolean\" },\n    required: { control: \"boolean\" },\n  },\n}"
-                },
-                {
-                    "name": "WithHint",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: \"Subscribe to release updates\",\n    hint: \"We send one update per sprint.\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <jaids-input-checkbox\n        [label]=\"label\"\n        [hint]=\"hint\"\n      ></jaids-input-checkbox>\n    `,\n  }),\n}"
-                }
-            ],
-            "libs/jai-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: \"Status\",\n    placeholder: \"Select status\",\n    size: \"md\",\n    options: [\n      { label: \"Open\", value: \"open\" },\n      { label: \"In Progress\", value: \"progress\" },\n      { label: \"Done\", value: \"done\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <jaids-input-dropdown\n        [label]=\"label\"\n        [placeholder]=\"placeholder\"\n        [size]=\"size\"\n        [options]=\"options\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></jaids-input-dropdown>\n    `,\n  }),\n}"
-                },
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<InputDropdownComponent>",
-                    "defaultValue": "{\n  component: InputDropdownComponent,\n  title: \"Primitives/Input Dropdown\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\", \"lg\"],\n    },\n    disabled: { control: \"boolean\" },\n    required: { control: \"boolean\" },\n  },\n}"
-                },
-                {
-                    "name": "WithError",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: \"Assignee\",\n    placeholder: \"Select assignee\",\n    error: \"Please select an assignee\",\n    options: [\n      { label: \"Joris\", value: \"joris\" },\n      { label: \"Alex\", value: \"alex\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <jaids-input-dropdown\n        [label]=\"label\"\n        [placeholder]=\"placeholder\"\n        [error]=\"error\"\n        [options]=\"options\"\n      ></jaids-input-dropdown>\n    `,\n  }),\n}"
-                }
-            ],
-            "libs/jai-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: \"Priority\",\n    options: [\n      { label: \"Low\", value: \"low\" },\n      { label: \"Medium\", value: \"medium\" },\n      { label: \"High\", value: \"high\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <jaids-input-radio\n        [label]=\"label\"\n        [options]=\"options\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></jaids-input-radio>\n    `,\n  }),\n}"
-                },
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<InputRadioComponent>",
-                    "defaultValue": "{\n  component: InputRadioComponent,\n  title: \"Primitives/Input Radio\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    disabled: { control: \"boolean\" },\n    required: { control: \"boolean\" },\n  },\n}"
-                },
-                {
-                    "name": "WithError",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: \"Approval\",\n    error: \"Please choose an option\",\n    options: [\n      { label: \"Approve\", value: \"approve\" },\n      { label: \"Reject\", value: \"reject\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <jaids-input-radio\n        [label]=\"label\"\n        [options]=\"options\"\n        [error]=\"error\"\n      ></jaids-input-radio>\n    `,\n  }),\n}"
-                }
-            ],
-            "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: { type: \"text\", size: \"md\", placeholder: \"Enter text...\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-input [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\"></jaids-input>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { type: \"text\", size: \"md\", placeholder: \"Enter text...\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
                 },
                 {
                     "name": "Disabled",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { size: \"md\", placeholder: \"Disabled\", disabled: true },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-input [size]=\"size\" [placeholder]=\"placeholder\" [disabled]=\"disabled\"></jaids-input>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { size: \"md\", placeholder: \"Disabled\", disabled: true },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [size]=\"size\" [placeholder]=\"placeholder\" [disabled]=\"disabled\"></agentjds-input>`,\n  }),\n}"
                 },
                 {
                     "name": "Large",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { size: \"lg\", placeholder: \"Large input\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-input [size]=\"size\" [placeholder]=\"placeholder\"></jaids-input>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { size: \"lg\", placeholder: \"Large input\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
                 },
                 {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<InputComponent>",
@@ -1016,59 +920,155 @@
                     "name": "Required",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: \"email\",\n    size: \"md\",\n    label: \"Email\",\n    placeholder: \"you@example.com\",\n    required: true,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\" [required]=\"required\"></jaids-input>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    type: \"email\",\n    size: \"md\",\n    label: \"Email\",\n    placeholder: \"you@example.com\",\n    required: true,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\" [required]=\"required\"></agentjds-input>`,\n  }),\n}"
                 },
                 {
                     "name": "Small",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: { size: \"sm\", placeholder: \"Small input\" },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-input [size]=\"size\" [placeholder]=\"placeholder\"></jaids-input>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: { size: \"sm\", placeholder: \"Small input\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
                 },
                 {
                     "name": "WithError",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: \"email\",\n    size: \"md\",\n    label: \"Email\",\n    error: \"Please enter a valid email\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [error]=\"error\"></jaids-input>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    type: \"email\",\n    size: \"md\",\n    label: \"Email\",\n    error: \"Please enter a valid email\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [error]=\"error\"></agentjds-input>`,\n  }),\n}"
                 },
                 {
                     "name": "WithHint",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: \"password\",\n    size: \"md\",\n    label: \"Password\",\n    hint: \"At least 8 characters\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [hint]=\"hint\"></jaids-input>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    type: \"password\",\n    size: \"md\",\n    label: \"Password\",\n    hint: \"At least 8 characters\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [hint]=\"hint\"></agentjds-input>`,\n  }),\n}"
                 },
                 {
                     "name": "WithLabel",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    type: \"text\",\n    size: \"md\",\n    label: \"Username\",\n    placeholder: \"Enter username\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<jaids-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\"></jaids-input>`,\n  }),\n}"
+                    "defaultValue": "{\n  args: {\n    type: \"text\",\n    size: \"md\",\n    label: \"Username\",\n    placeholder: \"Enter username\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
                 }
             ],
-            "libs/jai-design-system-components/src/lib/primitives/primitives.stories.ts": [
+            "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: \"I accept the terms and conditions\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-checkbox\n        [label]=\"label\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></agentjds-input-checkbox>\n    `,\n  }),\n}"
+                },
                 {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/primitives.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<InputCheckboxComponent>",
+                    "defaultValue": "{\n  component: InputCheckboxComponent,\n  title: \"Primitives/Input Checkbox\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    disabled: { control: \"boolean\" },\n    required: { control: \"boolean\" },\n  },\n}"
+                },
+                {
+                    "name": "WithHint",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: \"Subscribe to release updates\",\n    hint: \"We send one update per sprint.\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-checkbox\n        [label]=\"label\"\n        [hint]=\"hint\"\n      ></agentjds-input-checkbox>\n    `,\n  }),\n}"
+                }
+            ],
+            "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: \"Status\",\n    placeholder: \"Select status\",\n    size: \"md\",\n    options: [\n      { label: \"Open\", value: \"open\" },\n      { label: \"In Progress\", value: \"progress\" },\n      { label: \"Done\", value: \"done\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-dropdown\n        [label]=\"label\"\n        [placeholder]=\"placeholder\"\n        [size]=\"size\"\n        [options]=\"options\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></agentjds-input-dropdown>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<InputDropdownComponent>",
+                    "defaultValue": "{\n  component: InputDropdownComponent,\n  title: \"Primitives/Input Dropdown\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    size: {\n      control: { type: \"select\" },\n      options: [\"sm\", \"md\", \"lg\"],\n    },\n    disabled: { control: \"boolean\" },\n    required: { control: \"boolean\" },\n  },\n}"
+                },
+                {
+                    "name": "WithError",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: \"Assignee\",\n    placeholder: \"Select assignee\",\n    error: \"Please select an assignee\",\n    options: [\n      { label: \"Joris\", value: \"joris\" },\n      { label: \"Alex\", value: \"alex\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-dropdown\n        [label]=\"label\"\n        [placeholder]=\"placeholder\"\n        [error]=\"error\"\n        [options]=\"options\"\n      ></agentjds-input-dropdown>\n    `,\n  }),\n}"
+                }
+            ],
+            "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: \"Priority\",\n    options: [\n      { label: \"Low\", value: \"low\" },\n      { label: \"Medium\", value: \"medium\" },\n      { label: \"High\", value: \"high\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-radio\n        [label]=\"label\"\n        [options]=\"options\"\n        [disabled]=\"disabled\"\n        [required]=\"required\"\n      ></agentjds-input-radio>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<InputRadioComponent>",
+                    "defaultValue": "{\n  component: InputRadioComponent,\n  title: \"Primitives/Input Radio\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    disabled: { control: \"boolean\" },\n    required: { control: \"boolean\" },\n  },\n}"
+                },
+                {
+                    "name": "WithError",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: \"Approval\",\n    error: \"Please choose an option\",\n    options: [\n      { label: \"Approve\", value: \"approve\" },\n      { label: \"Reject\", value: \"reject\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-radio\n        [label]=\"label\"\n        [options]=\"options\"\n        [error]=\"error\"\n      ></agentjds-input-radio>\n    `,\n  }),\n}"
+                }
+            ],
+            "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta",
@@ -1078,140 +1078,140 @@
                     "name": "Playground",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/primitives.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: grid; gap: 20px; max-width: 520px;\">\n        <section style=\"display: flex; align-items: center; gap: 8px; flex-wrap: wrap;\">\n          <jaids-badge text=\"Neutral\"></jaids-badge>\n          <jaids-badge text=\"In Progress\" variant=\"primary\"></jaids-badge>\n          <jaids-badge text=\"Blocked\" variant=\"danger\"></jaids-badge>\n        </section>\n\n        <jaids-input-dropdown\n          label=\"Team\"\n          placeholder=\"Select team\"\n          [options]=\"[\n            { label: 'Field Service', value: 'fs' },\n            { label: 'Platform', value: 'platform' },\n            { label: 'Design', value: 'design' }\n          ]\"\n        ></jaids-input-dropdown>\n\n        <jaids-input-radio\n          label=\"Environment\"\n          [options]=\"[\n            { label: 'Development', value: 'dev' },\n            { label: 'Staging', value: 'staging' },\n            { label: 'Production', value: 'prod' }\n          ]\"\n        ></jaids-input-radio>\n\n        <jaids-input-checkbox\n          label=\"Enable notifications\"\n          hint=\"You can change this later in settings.\"\n        ></jaids-input-checkbox>\n      </div>\n    `,\n  }),\n}"
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: grid; gap: 20px; max-width: 520px;\">\n        <section style=\"display: flex; align-items: center; gap: 8px; flex-wrap: wrap;\">\n          <agentjds-badge text=\"Neutral\"></agentjds-badge>\n          <agentjds-badge text=\"In Progress\" variant=\"primary\"></agentjds-badge>\n          <agentjds-badge text=\"Blocked\" variant=\"danger\"></agentjds-badge>\n        </section>\n\n        <agentjds-input-dropdown\n          label=\"Team\"\n          placeholder=\"Select team\"\n          [options]=\"[\n            { label: 'Field Service', value: 'fs' },\n            { label: 'Platform', value: 'platform' },\n            { label: 'Design', value: 'design' }\n          ]\"\n        ></agentjds-input-dropdown>\n\n        <agentjds-input-radio\n          label=\"Environment\"\n          [options]=\"[\n            { label: 'Development', value: 'dev' },\n            { label: 'Staging', value: 'staging' },\n            { label: 'Production', value: 'prod' }\n          ]\"\n        ></agentjds-input-radio>\n\n        <agentjds-input-checkbox\n          label=\"Enable notifications\"\n          hint=\"You can change this later in settings.\"\n        ></agentjds-input-checkbox>\n      </div>\n    `,\n  }),\n}"
                 }
             ],
-            "apps/jai-design-system/.storybook/preview.ts": [
+            "apps/agentj-design-system/.storybook/preview.ts": [
                 {
                     "name": "preview",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "apps/jai-design-system/.storybook/preview.ts",
+                    "file": "apps/agentj-design-system/.storybook/preview.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Preview",
-                    "defaultValue": "{\n  parameters: {\n    options: {\n      storySort: {\n        method: 'alphabetical',\n        order: ['Jai', 'FieldServices', '*'],\n      },\n    },\n  },\n}"
+                    "defaultValue": "{\n  parameters: {\n    options: {\n      storySort: {\n        method: \"alphabetical\",\n        order: [\"Agentj\", \"FieldServices\", \"*\"],\n      },\n    },\n  },\n}"
                 }
             ]
         },
         "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {
-            "libs/jai-design-system-components/src/lib/primitives/primitives.stories.ts": [
+            "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/primitives.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 184
                 }
             ],
-            "libs/jai-design-system-components/src/lib/primitives/badge/badge.stories.ts": [
+            "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<BadgeComponent>",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 184
                 }
             ],
-            "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts": [
+            "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<ButtonComponent>",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 184
                 }
             ],
-            "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<IconComponent>",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
-            "libs/jai-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts": [
+            "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<ChatBubbleComponent>",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 184
                 }
             ],
-            "libs/jai-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<InputCheckboxComponent>",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
-            "libs/jai-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<InputDropdownComponent>",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
-            "libs/jai-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<InputRadioComponent>",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
-            "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts": [
+            "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<InputComponent>",
-                    "file": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<InputCheckboxComponent>",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<InputDropdownComponent>",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<InputRadioComponent>",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<IconComponent>",
+                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1230,7 +1230,7 @@
         "status": "low",
         "files": [
             {
-                "filePath": "apps/jai-design-system/.storybook/main.ts",
+                "filePath": "apps/agentj-design-system/.storybook/main.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1240,7 +1240,7 @@
                 "status": "low"
             },
             {
-                "filePath": "apps/jai-design-system/.storybook/preview.ts",
+                "filePath": "apps/agentj-design-system/.storybook/preview.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1250,7 +1250,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1260,7 +1260,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1270,7 +1270,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1280,7 +1280,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -1290,7 +1290,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1300,7 +1300,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1310,7 +1310,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1320,7 +1320,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1330,7 +1330,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1340,7 +1340,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1350,7 +1350,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1360,7 +1360,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1370,7 +1370,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -1380,7 +1380,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1390,7 +1390,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1400,7 +1400,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1410,7 +1410,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1420,7 +1420,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -1430,7 +1430,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1440,7 +1440,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1450,7 +1450,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1460,7 +1460,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1470,7 +1470,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1480,7 +1480,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1490,7 +1490,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1500,7 +1500,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1510,7 +1510,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1520,7 +1520,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1530,7 +1530,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1540,7 +1540,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -1550,7 +1550,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1560,7 +1560,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1570,7 +1570,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1580,7 +1580,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -1590,7 +1590,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1600,7 +1600,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1610,7 +1610,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1620,7 +1620,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -1630,7 +1630,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1640,7 +1640,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1650,7 +1650,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1660,7 +1660,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -1670,7 +1670,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1680,7 +1680,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1690,7 +1690,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1700,7 +1700,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1710,7 +1710,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1720,7 +1720,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1730,7 +1730,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1740,7 +1740,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1750,7 +1750,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1760,7 +1760,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -1770,7 +1770,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/primitives.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1780,7 +1780,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/primitives.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1790,7 +1790,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/jai-design-system-components/src/lib/primitives/primitives.stories.ts",
+                "filePath": "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",

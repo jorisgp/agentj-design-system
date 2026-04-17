@@ -1,10 +1,10 @@
 {
-  "name": "@jai-design-system/source",
+  "name": "@agentj-design-system/source",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build:components": "nx build jai-components",
-    "pack:components": "npm pack dist/libs/jai-design-system-components"
+    "build:components": "nx build agentj-components",
+    "pack:components": "npm pack dist/libs/agentj-design-system-components"
   },
   "private": true,
   "pnpm": {

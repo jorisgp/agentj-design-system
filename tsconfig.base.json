@@ -18,9 +18,11 @@
       "@aac-common": ["libs/common"],
       "@aac-common/*": ["libs/common/*"],
       "aac-generator": ["tools/aac-generator/src/index.ts"],
-      "@jai-design-system/aac-generator": ["tools/aac-generator/src/index.ts"],
-      "@jai/jai-design-system": [
-        "libs/jai-design-system-components/src/index.ts"
+      "@agentj-design-system/aac-generator": [
+        "tools/aac-generator/src/index.ts"
+      ],
+      "@agentj/agentj-design-system": [
+        "libs/agentj-design-system-components/src/index.ts"
       ]
     }
   },

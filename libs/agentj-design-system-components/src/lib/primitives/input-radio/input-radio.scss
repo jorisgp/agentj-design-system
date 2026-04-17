@@ -1,0 +1,58 @@
+.agentjds-input-radio-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.agentjds-input-radio__label {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.agentjds-input-radio__required {
+  color: #cc0000;
+  margin-left: 2px;
+}
+
+.agentjds-input-radio__options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.agentjds-input-radio__option {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #1f1f1f;
+}
+
+.agentjds-input-radio__option--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.agentjds-input-radio__input {
+  width: 16px;
+  height: 16px;
+  accent-color: #0066cc;
+}
+
+.agentjds-input-radio__text {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.agentjds-input-radio__error {
+  margin: 0;
+  font-size: 12px;
+  color: #cc0000;
+}
+
+.agentjds-input-radio__hint {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}

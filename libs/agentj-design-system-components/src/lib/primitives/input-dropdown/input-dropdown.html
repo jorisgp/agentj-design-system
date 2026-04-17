@@ -1,0 +1,36 @@
+<div class="agentjds-input-dropdown-wrapper">
+  @if (label()) {
+  <label class="agentjds-input-dropdown__label">
+    {{ label() }} @if (required()) {
+    <span class="agentjds-input-dropdown__required">*</span>
+    }
+  </label>
+  }
+
+  <select
+    [value]="value"
+    [required]="required()"
+    [disabled]="isDisabled()"
+    [class]="
+      'agentjds-input-dropdown agentjds-input-dropdown--' +
+      size() +
+      (error() ? ' agentjds-input-dropdown--error' : '')
+    "
+    (change)="onSelectionChange($event)"
+    (blur)="onBlur()"
+  >
+    @if (placeholder()) {
+    <option value="">{{ placeholder() }}</option>
+    } @for (option of options(); track option.value) {
+    <option [value]="option.value" [disabled]="option.disabled">
+      {{ option.label }}
+    </option>
+    }
+  </select>
+
+  @if (error()) {
+  <p class="agentjds-input-dropdown__error">{{ error() }}</p>
+  } @if (hint() && !error()) {
+  <p class="agentjds-input-dropdown__hint">{{ hint() }}</p>
+  }
+</div>

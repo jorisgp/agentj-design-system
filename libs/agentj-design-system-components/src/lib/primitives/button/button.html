@@ -1,0 +1,8 @@
+<button
+  [type]="type()"
+  [disabled]="disabled()"
+  [class]="'agentjds-button agentjds-button--' + variant() + ' agentjds-button--' + size()"
+  (click)="clicked.emit($event)"
+>
+  <ng-content />
+</button>

@@ -1,0 +1,17 @@
+<article [class]="'agentjds-chat-bubble agentjds-chat-bubble--' + direction()">
+  @if (author() || timestamp()) {
+  <header class="agentjds-chat-bubble__meta">
+    @if (author()) {
+    <span class="agentjds-chat-bubble__author">{{ author() }}</span>
+    } @if (timestamp()) {
+    <time class="agentjds-chat-bubble__time">{{ timestamp() }}</time>
+    }
+  </header>
+  }
+
+  <p
+    [class]="'agentjds-chat-bubble__message agentjds-chat-bubble__message--' + tone()"
+  >
+    {{ message() }}
+  </p>
+</article>

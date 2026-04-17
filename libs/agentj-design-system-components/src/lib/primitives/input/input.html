@@ -1,0 +1,25 @@
+<div class="agentjds-input-wrapper">
+  @if (label()) {
+  <label class="agentjds-input__label">
+    {{ label() }} @if (required()) {
+    <span class="agentjds-input__required">*</span>
+    }
+  </label>
+  }
+  <input
+    [type]="type()"
+    [value]="value"
+    [placeholder]="placeholder()"
+    [disabled]="disabled()"
+    [readOnly]="readonly()"
+    [required]="required()"
+    [class]="'agentjds-input agentjds-input--' + size() + (error() ? ' agentjds-input--error' : '')"
+    (input)="onInput($event)"
+    (blur)="onBlur()"
+  />
+  @if (error()) {
+  <p class="agentjds-input__error">{{ error() }}</p>
+  } @if (hint() && !error()) {
+  <p class="agentjds-input__hint">{{ hint() }}</p>
+  }
+</div>

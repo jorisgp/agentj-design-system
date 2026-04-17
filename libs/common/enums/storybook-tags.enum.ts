@@ -1,4 +1,4 @@
 export enum StorybookTagsEnum {
-  AUTODOCS = 'autodocs',
-  JAI_DESIGN_SYSTEM = 'jai-design-system',
+  AUTODOCS = "autodocs",
+  AGENTJ_DESIGN_SYSTEM = "agentj-design-system",
 }
