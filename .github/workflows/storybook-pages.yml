@@ -46,7 +46,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: apps/jai-design-system/storybook-static
+          path: dist/storybook/jai-design-system
 
   deploy:
     environment:
