@@ -1,0 +1,69 @@
+.jaids-button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-weight: 400;
+
+  outline: none;
+  transition:
+    background-color 0.2s,
+    box-shadow 0.2s;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &--primary {
+    background-color: #0066cc;
+    color: #fff;
+
+    &:hover:not(:disabled) {
+      background-color: #0052a3;
+    }
+  }
+
+  &--secondary {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #d0d0d0;
+
+    &:hover:not(:disabled) {
+      background-color: #e0e0e0;
+    }
+  }
+
+  &--danger {
+    background-color: #cc0000;
+    color: #fff;
+
+    &:hover:not(:disabled) {
+      background-color: #a30000;
+    }
+  }
+
+  &--ghost {
+    background-color: transparent;
+    color: #0066cc;
+    border: 1px solid #0066cc;
+
+    &:hover:not(:disabled) {
+      background-color: #f0f6ff;
+    }
+  }
+
+  &--sm {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  &--md {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  &--lg {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+}

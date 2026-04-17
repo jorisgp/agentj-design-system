@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "$id": "Component",
+  "title": "FS UI Angular Component",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Component name",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use?"
+    },
+    "library": {
+      "type": "string",
+      "description": "Library in which the component will be generated (must match an existing directory in libs)"
+    },
+    "directory": {
+      "type": "string",
+      "enum": ["primitives", "features", "ui-components"],
+      "default": "primitives",
+      "description": "Library section where the component will be generated",
+      "x-prompt": {
+        "message": "Where should this component be generated?",
+        "type": "list",
+        "items": [
+          {
+            "value": "primitives",
+            "label": "Primitive"
+          },
+          {
+            "value": "ui-components",
+            "label": "UI Component"
+          },
+          {
+            "value": "features",
+            "label": "Feature"
+          }
+        ]
+      }
+    },
+
+    "skipTests": {
+      "type": "boolean",
+      "default": false,
+      "description": "Do not generate a spec file"
+    }
+  },
+  "required": ["name"]
+}

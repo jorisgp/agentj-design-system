@@ -1,0 +1,26 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@aac-common": ["libs/common"],
+      "@aac-common/*": ["libs/common/*"],
+      "aac-generator": ["tools/aac-generator/src/index.ts"],
+      "@jai-design-system/aac-generator": ["tools/aac-generator/src/index.ts"],
+      "@jai-design-system/jai-components": ["jai-components/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

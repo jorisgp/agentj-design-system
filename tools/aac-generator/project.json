@@ -1,0 +1,48 @@
+{
+  "name": "aac-generator",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "tools/aac-generator/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/tools/aac-generator",
+        "main": "tools/aac-generator/src/index.ts",
+        "tsConfig": "tools/aac-generator/tsconfig.lib.json",
+        "assets": [
+          "tools/aac-generator/*.md",
+          {
+            "input": "./tools/aac-generator/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./tools/aac-generator/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./tools/aac-generator",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./tools/aac-generator",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nx/vitest:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "reportsDirectory": "coverage/tools/aac-generator"
+      }
+    }
+  }
+}

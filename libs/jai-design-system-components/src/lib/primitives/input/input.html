@@ -1,0 +1,25 @@
+<div class="jaids-input-wrapper">
+  @if (label()) {
+  <label class="jaids-input__label">
+    {{ label() }} @if (required()) {
+    <span class="jaids-input__required">*</span>
+    }
+  </label>
+  }
+  <input
+    [type]="type()"
+    [value]="value"
+    [placeholder]="placeholder()"
+    [disabled]="disabled()"
+    [readOnly]="readonly()"
+    [required]="required()"
+    [class]="'jaids-input jaids-input--' + size() + (error() ? ' jaids-input--error' : '')"
+    (input)="onInput($event)"
+    (blur)="onBlur()"
+  />
+  @if (error()) {
+  <p class="jaids-input__error">{{ error() }}</p>
+  } @if (hint() && !error()) {
+  <p class="jaids-input__hint">{{ hint() }}</p>
+  }
+</div>

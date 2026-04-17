@@ -1,0 +1,27 @@
+<div class="jaids-input-checkbox-wrapper">
+  <label
+    class="jaids-input-checkbox"
+    [class.jaids-input-checkbox--disabled]="isDisabled()"
+  >
+    <input
+      type="checkbox"
+      class="jaids-input-checkbox__control"
+      [checked]="checked"
+      [disabled]="isDisabled()"
+      [required]="required()"
+      (change)="onCheckboxChange($event)"
+      (blur)="onBlur()"
+    />
+    <span class="jaids-input-checkbox__label">
+      {{ label() }} @if (required()) {
+      <span class="jaids-input-checkbox__required">*</span>
+      }
+    </span>
+  </label>
+
+  @if (error()) {
+  <p class="jaids-input-checkbox__error">{{ error() }}</p>
+  } @if (hint() && !error()) {
+  <p class="jaids-input-checkbox__hint">{{ hint() }}</p>
+  }
+</div>

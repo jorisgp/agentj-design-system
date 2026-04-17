@@ -1,0 +1,10 @@
+<svg
+  [class]="'jaids-icon jaids-icon--' + size() + ' jaids-icon--' + color()"
+  [attr.aria-label]="ariaLabel() || null"
+  [attr.role]="ariaLabel() ? 'img' : 'presentation'"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path [attr.d]="path" />
+</svg>

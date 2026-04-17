@@ -1,0 +1,120 @@
+{
+  "name": "jai-design-system",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "app",
+  "sourceRoot": "apps/jai-design-system/src",
+  "tags": ["scope:app"],
+  "targets": {
+    "build": {
+      "executor": "@angular/build:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/jai-design-system",
+        "browser": "apps/jai-design-system/src/main.ts",
+        "tsConfig": "apps/jai-design-system/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/jai-design-system/public"
+          }
+        ],
+        "styles": [
+          "apps/jai-design-system/src/styles.scss",
+          "@jai/jai-design-system-style/dist/style.min.css",
+          "node_modules/@jai/jai-design-system-style/dist/foundations.min.css",
+          "node_modules/@jai/jai-design-system-style/dist/style.min.css"
+        ],
+        "scripts": ["@jai/jai-design-system-components/index.js"]
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "4kb",
+              "maximumError": "8kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "continuous": true,
+      "executor": "@angular/build:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "jai-design-system:build:production"
+        },
+        "development": {
+          "buildTarget": "jai-design-system:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@angular/build:unit-test",
+      "options": {}
+    },
+    "serve-static": {
+      "continuous": true,
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "jai-design-system:build",
+        "port": 4200,
+        "staticFilePath": "dist/apps/jai-design-system/browser",
+        "spa": true
+      }
+    },
+    "storybook-build": {
+      "executor": "@angular/build:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/jai-design-system-storybook",
+        "browser": "apps/jai-design-system/src/main.ts",
+        "tsConfig": "apps/jai-design-system/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/jai-design-system/public"
+          }
+        ],
+        "styles": ["apps/jai-design-system/src/styles.scss"]
+      },
+      "configurations": {
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "port": 6006,
+        "tsConfig": "apps/jai-design-system/.storybook/tsconfig.json",
+        "configDir": "apps/jai-design-system/.storybook",
+        "browserTarget": "jai-design-system:storybook-build"
+      }
+    }
+  }
+}
