@@ -2,6 +2,9 @@
   "name": "@agentj-design-system/source",
   "version": "0.0.0",
   "license": "MIT",
+  "engines": {
+    "node": ">=22.12.0 <23"
+  },
   "scripts": {
     "build:components": "nx build agentj-components",
     "pack:components": "npm pack dist/libs/agentj-design-system-components"
