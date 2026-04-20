@@ -44,7 +44,11 @@ jobs:
           node -e "const pkg=require('./dist/libs/agentj-design-system-components/package.json'); console.log('name=' + pkg.name); console.log('version=' + pkg.version);" >> "$GITHUB_OUTPUT"
 
       - name: Show publish candidate
-        run: echo "Publishing candidate: ${{ steps.pkg.outputs.name }}@${{ steps.pkg.outputs.version }}"
+        env:
+          PKG_NAME: "${{ steps.pkg.outputs.name }}"
+          PKG_VERSION: "${{ steps.pkg.outputs.version }}"
+        run: |
+          echo "Publishing candidate: ${PKG_NAME}@${PKG_VERSION}"
 
       - name: Check if version exists on npm
         id: npm_check
