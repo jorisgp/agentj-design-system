@@ -1,0 +1,10 @@
+.agentjds-disclaimer {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--agentj-color-text-muted, #5a6478);
+
+  &--centered {
+    text-align: center;
+  }
+}

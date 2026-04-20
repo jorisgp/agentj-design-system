@@ -1,0 +1,13 @@
+<div class="agentjds-logo" [class]="'agentjds-logo agentjds-logo--' + size()">
+  <img
+    class="agentjds-logo__image"
+    [src]="src() || null"
+    [alt]="alt()"
+    [style.display]="src() ? 'block' : 'none'"
+  />
+
+  <span class="agentjds-logo__fallback" [style.display]="src() ? 'none' : 'inline-flex'">
+    <span class="agentjds-logo__mark" aria-hidden="true">{{ mark() }}</span>
+    <span class="agentjds-logo__text">{{ text() }}</span>
+  </span>
+</div>

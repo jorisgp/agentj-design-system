@@ -1,0 +1,65 @@
+.agentjds-logo {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+
+  &--sm {
+    --agentj-logo-height: 24px;
+    --agentj-logo-mark-size: 20px;
+    --agentj-logo-mark-font-size: 10px;
+    --agentj-logo-text-size: 18px;
+    --agentj-logo-gap: 6px;
+  }
+
+  &--md {
+    --agentj-logo-height: 32px;
+    --agentj-logo-mark-size: 26px;
+    --agentj-logo-mark-font-size: 11px;
+    --agentj-logo-text-size: 24px;
+    --agentj-logo-gap: 8px;
+  }
+
+  &--lg {
+    --agentj-logo-height: 44px;
+    --agentj-logo-mark-size: 34px;
+    --agentj-logo-mark-font-size: 13px;
+    --agentj-logo-text-size: 32px;
+    --agentj-logo-gap: 10px;
+  }
+}
+
+.agentjds-logo__image {
+  display: block;
+  height: var(--agentj-logo-height);
+  width: auto;
+}
+
+.agentjds-logo__fallback {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--agentj-logo-gap);
+}
+
+.agentjds-logo__mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--agentj-logo-mark-size);
+  height: var(--agentj-logo-mark-size);
+  border-radius: 999px;
+  background: var(--agentj-color-primary, #135ddd);
+  color: #ffffff;
+  font-family: "Open Sans", Calibri, Arial, sans-serif;
+  font-size: var(--agentj-logo-mark-font-size);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.agentjds-logo__text {
+  color: var(--agentj-color-text, #1c2434);
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: var(--agentj-logo-text-size);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}

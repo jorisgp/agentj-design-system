@@ -1,0 +1,7 @@
+<p
+  [class]="'agentjds-disclaimer' + (centered() ? ' agentjds-disclaimer--centered' : '')"
+>
+  @if (text()) { {{ text() }} } @else {
+  <ng-content />
+  }
+</p>

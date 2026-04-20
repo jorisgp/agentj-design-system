@@ -1,0 +1,9 @@
+<button
+  [type]="type()"
+  [disabled]="disabled()"
+  [attr.aria-label]="ariaLabel() || null"
+  [class]="'agentjds-icon-button agentjds-icon-button--' + variant() + ' agentjds-icon-button--' + size() + ' agentjds-icon-button--' + shape()"
+  (click)="clicked.emit($event)"
+>
+  <agentjds-icon [name]="icon()" size="md" color="inherit" />
+</button>

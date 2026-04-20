@@ -1,0 +1,52 @@
+<div
+  class="agentjds-chat-input"
+  [class.agentjds-chat-input--disabled]="disabled()"
+>
+  <div
+    class="agentjds-chat-input__body"
+    [class.agentjds-chat-input__body--multiline]="isMultiline()"
+  >
+    <agentjds-icon-button
+      icon="attach"
+      variant="ghost"
+      size="sm"
+      shape="circle"
+      class="agentjds-chat-input__attach"
+      ariaLabel="Attach file"
+      [disabled]="disabled()"
+      (clicked)="attachClicked.emit()"
+    />
+    <textarea
+      #textarea
+      class="agentjds-chat-input__textarea"
+      [placeholder]="placeholder()"
+      [disabled]="disabled()"
+      [value]="value()"
+      rows="1"
+      (input)="onInput($event)"
+      (keydown)="onKeydown($event)"
+    ></textarea>
+    <div class="agentjds-chat-input__actions">
+      <agentjds-icon-button
+        icon="mic"
+        variant="ghost"
+        size="sm"
+        shape="circle"
+        class="agentjds-chat-input__mic"
+        ariaLabel="Start voice input"
+        [disabled]="disabled()"
+        (clicked)="attachClicked.emit()"
+      />
+      <agentjds-icon-button
+        icon="arrow-up"
+        variant="primary"
+        size="sm"
+        shape="circle"
+        class="agentjds-chat-input__send"
+        ariaLabel="Send message"
+        [disabled]="disabled() || !value().trim()"
+        (clicked)="submit()"
+      />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+.agentjds-heading {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--agentj-color-text, #1c2434);
+
+  &--muted {
+    color: var(--agentj-color-text-muted, #5a6478);
+  }
+
+  &--xs {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+
+  &--sm {
+    font-size: 16px;
+  }
+
+  &--md {
+    font-size: 20px;
+  }
+
+  &--lg {
+    font-size: 24px;
+  }
+
+  &--xl {
+    font-size: 32px;
+    letter-spacing: -0.02em;
+  }
+
+  &--2xl {
+    font-size: 42px;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+  }
+}
