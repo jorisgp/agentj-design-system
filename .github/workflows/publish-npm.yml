@@ -43,17 +43,47 @@ jobs:
         run: |
           node -e "const pkg=require('./dist/libs/agentj-design-system-components/package.json'); console.log('name=' + pkg.name); console.log('version=' + pkg.version);" >> "$GITHUB_OUTPUT"
 
-      - name: Show publish candidate
+      - name: Compute next minor version
+        id: bump
         env:
           PKG_NAME: "${{ steps.pkg.outputs.name }}"
           PKG_VERSION: "${{ steps.pkg.outputs.version }}"
         run: |
+          set -euo pipefail
+
+          LATEST_VERSION="$(npm view "${PKG_NAME}" version 2>/dev/null || true)"
+          if [ -n "${LATEST_VERSION}" ]; then
+            BASE_VERSION="${LATEST_VERSION}"
+            BASE_SOURCE="npm"
+          else
+            BASE_VERSION="${PKG_VERSION}"
+            BASE_SOURCE="package.json"
+          fi
+
+          NEXT_VERSION="$(node -e 'const v=process.argv[1].split("."); if(v.length<2){throw new Error("Invalid semver: " + process.argv[1]);} const major=Number(v[0]); const minor=Number(v[1]); if(Number.isNaN(major) || Number.isNaN(minor)){throw new Error("Invalid semver: " + process.argv[1]);} console.log(`${major}.${minor + 1}.0`);' "${BASE_VERSION}")"
+
+          echo "base_source=${BASE_SOURCE}" >> "$GITHUB_OUTPUT"
+          echo "base_version=${BASE_VERSION}" >> "$GITHUB_OUTPUT"
+          echo "next_version=${NEXT_VERSION}" >> "$GITHUB_OUTPUT"
+
+      - name: Set dist package version
+        run: |
+          npm pkg set version="${{ steps.bump.outputs.next_version }}" --prefix dist/libs/agentj-design-system-components
+
+      - name: Show publish candidate
+        env:
+          PKG_NAME: "${{ steps.pkg.outputs.name }}"
+          PKG_VERSION: "${{ steps.bump.outputs.next_version }}"
+          BASE_SOURCE: "${{ steps.bump.outputs.base_source }}"
+          BASE_VERSION: "${{ steps.bump.outputs.base_version }}"
+        run: |
+          echo "Version base: ${BASE_VERSION} (${BASE_SOURCE})"
           echo "Publishing candidate: ${PKG_NAME}@${PKG_VERSION}"
 
       - name: Check if version exists on npm
         id: npm_check
         run: |
-          if npm view "${{ steps.pkg.outputs.name }}@${{ steps.pkg.outputs.version }}" version >/dev/null 2>&1; then
+          if npm view "${{ steps.pkg.outputs.name }}@${{ steps.bump.outputs.next_version }}" version >/dev/null 2>&1; then
             echo "already_published=true" >> "$GITHUB_OUTPUT"
           else
             echo "already_published=false" >> "$GITHUB_OUTPUT"
