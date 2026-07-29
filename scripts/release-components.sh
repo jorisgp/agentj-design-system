@@ -59,7 +59,7 @@ next_release_branch() {
   local index=1
 
   while branch_exists "${branch}"; do
-    branch="$(printf '%s/%02d' "${RELEASE_BRANCH_BASE}" "${index}")"
+    branch="$(printf '%s--%02d' "${RELEASE_BRANCH_BASE}" "${index}")"
     index=$((index + 1))
   done
 
@@ -76,6 +76,7 @@ if [[ "${CURRENT_BRANCH}" == "${RELEASE_BRANCH_BASE}" || "${CURRENT_BRANCH}" =~ 
   echo "Continuing on existing release branch: ${RELEASE_BRANCH}"
 else
   RELEASE_BRANCH="$(next_release_branch)"
+  echo "Creating release branch: ${RELEASE_BRANCH}"
 
   if ! git rev-parse --verify "${SOURCE_BRANCH}" >/dev/null 2>&1; then
     git fetch origin "${SOURCE_BRANCH}:${SOURCE_BRANCH}"
