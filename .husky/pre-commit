@@ -1,0 +1,3 @@
+pnpm nx build agent-j-husky-checks --skip-nx-cache >/dev/null
+node dist/libs/agent-j-husky-checks/src/format-staged-files/format-staged-files.js
+node dist/libs/agent-j-husky-checks/src/lint-staged-files/lint-staged-files.js

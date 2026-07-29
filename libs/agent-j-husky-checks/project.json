@@ -1,0 +1,26 @@
+{
+  "name": "agent-j-husky-checks",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/agent-j-husky-checks/src",
+  "projectType": "library",
+  "tags": ["scope:common"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/agent-j-husky-checks",
+        "main": "libs/agent-j-husky-checks/src/index.ts",
+        "tsConfig": "libs/agent-j-husky-checks/tsconfig.lib.json",
+        "assets": ["libs/agent-j-husky-checks/*.md"]
+      }
+    },
+    "test": {
+      "executor": "@nx/vitest:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "reportsDirectory": "coverage/libs/agent-j-husky-checks"
+      }
+    }
+  }
+}

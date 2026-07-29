@@ -1,0 +1,2 @@
+pnpm nx build agent-j-husky-checks --skip-nx-cache >/dev/null
+node dist/libs/agent-j-husky-checks/src/check-commit-message/check-commit-message.js "$1"

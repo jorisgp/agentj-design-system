@@ -1,0 +1,17 @@
+{
+  "name": "@agentj/husky-checks",
+  "version": "0.0.1",
+  "private": false,
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "bin": {
+    "agentj-check-branch-name": "./src/check-branch-name/check-branch-name.js",
+    "agentj-check-commit-message": "./src/check-commit-message/check-commit-message.js",
+    "agentj-format-staged-files": "./src/format-staged-files/format-staged-files.js",
+    "agentj-lint-staged-files": "./src/lint-staged-files/lint-staged-files.js"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}

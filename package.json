@@ -1,13 +1,14 @@
 {
-  "name": "@agentj-design-system/source",
+  "name": "agent-j-utils",
   "version": "0.0.0",
   "license": "MIT",
   "engines": {
     "node": ">=24.0.0"
   },
   "scripts": {
-    "build:components": "nx build agentj-components",
-    "pack:components": "npm pack dist/libs/agentj-design-system-components",
+    "build:components": "nx build agent-j-components",
+    "pack:components": "npm pack dist/libs/agent-j-components",
+    "prepare": "husky",
     "test": "pnpm nx run-many --target=test --all"
   },
   "private": true,

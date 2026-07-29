@@ -1,0 +1,48 @@
+{
+  "name": "agent-j-generator",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "tools/agent-j-generator/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/tools/agent-j-generator",
+        "main": "tools/agent-j-generator/src/index.ts",
+        "tsConfig": "tools/agent-j-generator/tsconfig.lib.json",
+        "assets": [
+          "tools/agent-j-generator/*.md",
+          {
+            "input": "./tools/agent-j-generator/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./tools/agent-j-generator/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./tools/agent-j-generator",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./tools/agent-j-generator",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nx/vitest:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "reportsDirectory": "coverage/tools/agent-j-generator"
+      }
+    }
+  }
+}

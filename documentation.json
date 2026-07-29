@@ -14,7 +14,7 @@
                 "name": "AllColors",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -24,7 +24,7 @@
                 "name": "AllIcons",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -34,7 +34,7 @@
                 "name": "AllSizes",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -44,7 +44,7 @@
                 "name": "Attach",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/composites/icon-button/icon-button.stories.ts",
+                "file": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -54,7 +54,7 @@
                 "name": "Centered",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -64,7 +64,7 @@
                 "name": "Check",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -74,7 +74,7 @@
                 "name": "Close",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -94,7 +94,7 @@
                 "name": "Conversation",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -104,7 +104,7 @@
                 "name": "Danger",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -114,7 +114,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
+                "file": "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -124,7 +124,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/background/background.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/background/background.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -134,7 +134,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/badge/badge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -144,7 +144,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -154,7 +154,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -164,7 +164,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/heading/heading.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/heading/heading.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -174,7 +174,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -184,7 +184,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -194,7 +194,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -204,7 +204,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input-radio/input-radio.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -214,7 +214,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
+                "file": "libs/agent-j-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -224,7 +224,7 @@
                 "name": "Disabled",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -234,7 +234,7 @@
                 "name": "Disabled",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -244,7 +244,7 @@
                 "name": "Disabled",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
+                "file": "libs/agent-j-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -254,7 +254,7 @@
                 "name": "Display",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/heading/heading.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/heading/heading.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -264,7 +264,7 @@
                 "name": "Error",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -274,7 +274,7 @@
                 "name": "Ghost",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/composites/icon-button/icon-button.stories.ts",
+                "file": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -284,7 +284,7 @@
                 "name": "Ghost",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -294,7 +294,7 @@
                 "name": "Image",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -304,7 +304,7 @@
                 "name": "Incoming",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -314,7 +314,7 @@
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -324,7 +324,7 @@
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -334,7 +334,7 @@
                 "name": "LightGray",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/background/background.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/background/background.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -344,7 +344,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/primitives.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta",
@@ -354,7 +354,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
+                "file": "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<DropdownButtonComponent>",
@@ -364,7 +364,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/composites/icon-button/icon-button.stories.ts",
+                "file": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<IconButtonComponent>",
@@ -374,7 +374,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/background/background.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/background/background.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<BackgroundComponent>",
@@ -384,7 +384,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/badge/badge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<BadgeComponent>",
@@ -394,7 +394,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ButtonComponent>",
@@ -404,7 +404,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ChatBubbleComponent>",
@@ -414,7 +414,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<DisclaimerComponent>",
@@ -424,7 +424,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<IconComponent>",
@@ -434,7 +434,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/heading/heading.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/heading/heading.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<HeadingComponent>",
@@ -444,7 +444,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<InputComponent>",
@@ -454,7 +454,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<InputCheckboxComponent>",
@@ -464,7 +464,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<InputDropdownComponent>",
@@ -474,7 +474,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input-radio/input-radio.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<InputRadioComponent>",
@@ -484,7 +484,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<LogoComponent>",
@@ -494,7 +494,7 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
+                "file": "libs/agent-j-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ChatInputComponent>",
@@ -504,7 +504,7 @@
                 "name": "Muted",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/heading/heading.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/heading/heading.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -514,7 +514,7 @@
                 "name": "options",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
+                "file": "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
@@ -524,7 +524,7 @@
                 "name": "Outgoing",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -534,7 +534,7 @@
                 "name": "Playground",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/primitives.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -554,7 +554,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -564,7 +564,7 @@
                 "name": "Required",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -574,7 +574,7 @@
                 "name": "SAMPLE_LOGO_SRC",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "string",
@@ -584,7 +584,7 @@
                 "name": "Search",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -594,7 +594,7 @@
                 "name": "Secondary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
+                "file": "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -604,7 +604,7 @@
                 "name": "Secondary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -614,7 +614,7 @@
                 "name": "Send",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/composites/icon-button/icon-button.stories.ts",
+                "file": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -624,7 +624,7 @@
                 "name": "Sizes",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -634,7 +634,7 @@
                 "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -644,7 +644,7 @@
                 "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -654,7 +654,7 @@
                 "name": "Star",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -664,7 +664,7 @@
                 "name": "StatusVariants",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/badge/badge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -674,7 +674,7 @@
                 "name": "Warning",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -684,7 +684,7 @@
                 "name": "WithError",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -694,7 +694,7 @@
                 "name": "WithError",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -704,7 +704,7 @@
                 "name": "WithError",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input-radio/input-radio.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -714,7 +714,7 @@
                 "name": "WithHint",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -724,7 +724,7 @@
                 "name": "WithHint",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -734,7 +734,7 @@
                 "name": "WithLabel",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -744,7 +744,7 @@
                 "name": "Wordmark",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -758,7 +758,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/primitives.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -769,7 +769,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<DropdownButtonComponent>",
-                "file": "libs/agentj-design-system-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
+                "file": "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -780,7 +780,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<IconButtonComponent>",
-                "file": "libs/agentj-design-system-components/src/lib/composites/icon-button/icon-button.stories.ts",
+                "file": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -791,7 +791,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<BackgroundComponent>",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/background/background.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/background/background.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -802,7 +802,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<BadgeComponent>",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/badge/badge.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -813,7 +813,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<ButtonComponent>",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -824,7 +824,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<ChatBubbleComponent>",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -835,7 +835,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<DisclaimerComponent>",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -846,7 +846,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<IconComponent>",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -857,7 +857,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<HeadingComponent>",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/heading/heading.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/heading/heading.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -868,7 +868,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<InputComponent>",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -879,7 +879,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<InputCheckboxComponent>",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -890,7 +890,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<InputDropdownComponent>",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -901,7 +901,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<InputRadioComponent>",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/input-radio/input-radio.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -912,7 +912,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<LogoComponent>",
-                "file": "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts",
+                "file": "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -923,7 +923,7 @@
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
                 "rawtype": "StoryObj<ChatInputComponent>",
-                "file": "libs/agentj-design-system-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
+                "file": "libs/agent-j-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -932,12 +932,12 @@
         ],
         "enumerations": [],
         "groupedVariables": {
-            "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts": [
                 {
                     "name": "AllColors",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -947,7 +947,7 @@
                     "name": "AllIcons",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -957,7 +957,7 @@
                     "name": "AllSizes",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -967,7 +967,7 @@
                     "name": "Check",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -977,7 +977,7 @@
                     "name": "Close",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -987,7 +987,7 @@
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -997,7 +997,7 @@
                     "name": "Error",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1007,7 +1007,7 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<IconComponent>",
@@ -1017,7 +1017,7 @@
                     "name": "Search",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1027,7 +1027,7 @@
                     "name": "Star",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1037,19 +1037,19 @@
                     "name": "Warning",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: { name: \"warning\", size: \"md\", color: \"warning\" },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-icon [name]=\"name\" [size]=\"size\" [color]=\"color\"></agentjds-icon>`,\n  }),\n}"
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/composites/icon-button/icon-button.stories.ts": [
+            "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts": [
                 {
                     "name": "Attach",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/composites/icon-button/icon-button.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1059,7 +1059,7 @@
                     "name": "Ghost",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/composites/icon-button/icon-button.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1069,7 +1069,7 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/composites/icon-button/icon-button.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<IconButtonComponent>",
@@ -1079,19 +1079,19 @@
                     "name": "Send",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/composites/icon-button/icon-button.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    icon: \"send\",\n    variant: \"primary\",\n    size: \"md\",\n    shape: \"circle\",\n    ariaLabel: \"Send message\",\n  },\n}"
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/disclaimer/disclaimer.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/disclaimer/disclaimer.stories.ts": [
                 {
                     "name": "Centered",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1101,7 +1101,7 @@
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1111,7 +1111,7 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<DisclaimerComponent>",
@@ -1130,12 +1130,12 @@
                     "defaultValue": "{\n  stories: [\"../../../libs/**/*.stories.@(ts|mdx)\"],\n  addons: [],\n  framework: {\n    name: \"@storybook/angular\",\n    options: {},\n  },\n}"
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts": [
                 {
                     "name": "Conversation",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1145,7 +1145,7 @@
                     "name": "Incoming",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1155,7 +1155,7 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ChatBubbleComponent>",
@@ -1165,19 +1165,19 @@
                     "name": "Outgoing",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    author: \"You\",\n    timestamp: \"10:35\",\n    message: \"Yes, let us include radio + checkbox too.\",\n    direction: \"outgoing\",\n    tone: \"primary\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 560px;\">\n        <agentjds-chat-bubble\n          [author]=\"author\"\n          [timestamp]=\"timestamp\"\n          [message]=\"message\"\n          [direction]=\"direction\"\n          [tone]=\"tone\"\n        ></agentjds-chat-bubble>\n      </div>\n    `,\n  }),\n}"
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/button/button.stories.ts": [
                 {
                     "name": "Danger",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1187,7 +1187,7 @@
                     "name": "Disabled",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1197,7 +1197,7 @@
                     "name": "Ghost",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1207,7 +1207,7 @@
                     "name": "Large",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1217,7 +1217,7 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ButtonComponent>",
@@ -1227,7 +1227,7 @@
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1237,7 +1237,7 @@
                     "name": "Secondary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1247,19 +1247,19 @@
                     "name": "Small",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: { variant: \"primary\", size: \"sm\", disabled: false },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-button [variant]=\"variant\" [size]=\"size\" [disabled]=\"disabled\">Small</agentjds-button>`,\n  }),\n}"
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts": [
+            "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1269,7 +1269,7 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<DropdownButtonComponent>",
@@ -1279,7 +1279,7 @@
                     "name": "options",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "[]",
@@ -1289,19 +1289,19 @@
                     "name": "Secondary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    label: \"Select model\",\n    variant: \"secondary\",\n    size: \"md\",\n    options,\n  },\n}"
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/background/background.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/background/background.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/background/background.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/background/background.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1311,7 +1311,7 @@
                     "name": "LightGray",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/background/background.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/background/background.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1321,19 +1321,19 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/background/background.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/background/background.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<BackgroundComponent>",
                     "defaultValue": "{\n  component: BackgroundComponent,\n  title: \"Primitives/Background\",\n  tags: [\"autodocs\"],\n  parameters: {\n    layout: \"fullscreen\",\n  },\n  argTypes: {\n    color: {\n      control: \"color\",\n    },\n  },\n}"
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/badge/badge.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/badge/badge.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1343,7 +1343,7 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/badge/badge.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<BadgeComponent>",
@@ -1353,19 +1353,19 @@
                     "name": "StatusVariants",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/badge/badge.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 8px; align-items: center; flex-wrap: wrap;\">\n        <agentjds-badge text=\"Neutral\" variant=\"neutral\"></agentjds-badge>\n        <agentjds-badge text=\"Primary\" variant=\"primary\"></agentjds-badge>\n        <agentjds-badge text=\"Success\" variant=\"success\"></agentjds-badge>\n        <agentjds-badge text=\"Warning\" variant=\"warning\"></agentjds-badge>\n        <agentjds-badge text=\"Danger\" variant=\"danger\"></agentjds-badge>\n      </div>\n    `,\n  }),\n}"
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/heading/heading.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/heading/heading.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/heading/heading.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/heading/heading.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1375,7 +1375,7 @@
                     "name": "Display",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/heading/heading.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/heading/heading.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1385,7 +1385,7 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/heading/heading.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/heading/heading.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<HeadingComponent>",
@@ -1395,19 +1395,19 @@
                     "name": "Muted",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/heading/heading.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/heading/heading.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    level: 2,\n    size: \"md\",\n    muted: true,\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-heading [level]=\"level\" [size]=\"size\" [muted]=\"muted\">Subtitle text</agentjds-heading>`,\n  }),\n}"
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/input/input.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1417,7 +1417,7 @@
                     "name": "Disabled",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1427,7 +1427,7 @@
                     "name": "Large",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1437,7 +1437,7 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<InputComponent>",
@@ -1447,7 +1447,7 @@
                     "name": "Required",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1457,7 +1457,7 @@
                     "name": "Small",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1467,7 +1467,7 @@
                     "name": "WithError",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1477,7 +1477,7 @@
                     "name": "WithHint",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1487,19 +1487,19 @@
                     "name": "WithLabel",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    type: \"text\",\n    size: \"md\",\n    label: \"Username\",\n    placeholder: \"Enter username\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `<agentjds-input [label]=\"label\" [type]=\"type\" [size]=\"size\" [placeholder]=\"placeholder\"></agentjds-input>`,\n  }),\n}"
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1509,7 +1509,7 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<InputCheckboxComponent>",
@@ -1519,19 +1519,19 @@
                     "name": "WithHint",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    label: \"Subscribe to release updates\",\n    hint: \"We send one update per sprint.\",\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-checkbox\n        [label]=\"label\"\n        [hint]=\"hint\"\n      ></agentjds-input-checkbox>\n    `,\n  }),\n}"
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1541,7 +1541,7 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<InputDropdownComponent>",
@@ -1551,19 +1551,19 @@
                     "name": "WithError",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    label: \"Assignee\",\n    placeholder: \"Select assignee\",\n    error: \"Please select an assignee\",\n    options: [\n      { label: \"Joris\", value: \"joris\" },\n      { label: \"Alex\", value: \"alex\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-dropdown\n        [label]=\"label\"\n        [placeholder]=\"placeholder\"\n        [error]=\"error\"\n        [options]=\"options\"\n      ></agentjds-input-dropdown>\n    `,\n  }),\n}"
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/input-radio/input-radio.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input-radio/input-radio.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1573,7 +1573,7 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input-radio/input-radio.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<InputRadioComponent>",
@@ -1583,19 +1583,19 @@
                     "name": "WithError",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input-radio/input-radio.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    label: \"Approval\",\n    error: \"Please choose an option\",\n    options: [\n      { label: \"Approve\", value: \"approve\" },\n      { label: \"Reject\", value: \"reject\" },\n    ],\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <agentjds-input-radio\n        [label]=\"label\"\n        [options]=\"options\"\n        [error]=\"error\"\n      ></agentjds-input-radio>\n    `,\n  }),\n}"
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/ui-components/chat-input/chat-input.stories.ts": [
+            "libs/agent-j-components/src/lib/ui-components/chat-input/chat-input.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1605,7 +1605,7 @@
                     "name": "Disabled",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1615,19 +1615,19 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ChatInputComponent>",
                     "defaultValue": "{\n  component: ChatInputComponent,\n  title: \"UI Components/ChatInput\",\n  tags: [\"autodocs\"],\n  argTypes: {\n    placeholder: {\n      control: \"text\",\n    },\n    disabled: {\n      control: \"boolean\",\n    },\n    maxRows: {\n      control: { type: \"number\", min: 1, max: 20 },\n    },\n  },\n}"
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts": [
                 {
                     "name": "Image",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1637,7 +1637,7 @@
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<LogoComponent>",
@@ -1647,7 +1647,7 @@
                     "name": "SAMPLE_LOGO_SRC",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "string",
@@ -1657,7 +1657,7 @@
                     "name": "Sizes",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1667,19 +1667,19 @@
                     "name": "Wordmark",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    src: \"\",\n    alt: \"AgentJ logo\",\n    text: \"AgentJ\",\n    mark: \"AJ\",\n    size: \"md\",\n  },\n  render: (args) => ({\n    props: args,\n    template:\n      \"<agentjds-logo [src]=\\\"src\\\" [alt]=\\\"alt\\\" [text]=\\\"text\\\" [mark]=\\\"mark\\\" [size]=\\\"size\\\"></agentjds-logo>\",\n  }),\n}"
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/primitives.stories.ts": [
                 {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/primitives.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta",
@@ -1689,7 +1689,7 @@
                     "name": "Playground",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/primitives.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
@@ -1712,208 +1712,208 @@
         "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {
-            "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/primitives.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/primitives.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 184
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts": [
+            "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<DropdownButtonComponent>",
-                    "file": "libs/agentj-design-system-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 184
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/composites/icon-button/icon-button.stories.ts": [
+            "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<IconButtonComponent>",
-                    "file": "libs/agentj-design-system-components/src/lib/composites/icon-button/icon-button.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 184
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/background/background.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/background/background.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<BackgroundComponent>",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/background/background.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/background/background.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 184
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/badge/badge.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<BadgeComponent>",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/badge/badge.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 184
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/button/button.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<ButtonComponent>",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 184
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<ChatBubbleComponent>",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 184
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/disclaimer/disclaimer.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/disclaimer/disclaimer.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<DisclaimerComponent>",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 184
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<IconComponent>",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 184
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/heading/heading.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/heading/heading.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<HeadingComponent>",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/heading/heading.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/heading/heading.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 184
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/input/input.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<InputComponent>",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 184
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<InputCheckboxComponent>",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 184
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<InputDropdownComponent>",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 184
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/input-radio/input-radio.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<InputRadioComponent>",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/input-radio/input-radio.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 184
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts": [
+            "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<LogoComponent>",
-                    "file": "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 184
                 }
             ],
-            "libs/agentj-design-system-components/src/lib/ui-components/chat-input/chat-input.stories.ts": [
+            "libs/agent-j-components/src/lib/ui-components/chat-input/chat-input.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "StoryObj<ChatInputComponent>",
-                    "file": "libs/agentj-design-system-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
+                    "file": "libs/agent-j-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1952,7 +1952,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1962,7 +1962,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1972,7 +1972,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1982,7 +1982,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1992,7 +1992,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/composites/dropdown-button/dropdown-button.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -2002,7 +2002,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/composites/icon-button/icon-button.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2012,7 +2012,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/composites/icon-button/icon-button.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2022,7 +2022,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/composites/icon-button/icon-button.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2032,7 +2032,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/composites/icon-button/icon-button.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2042,7 +2042,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/composites/icon-button/icon-button.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/composites/icon-button/icon-button.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -2052,7 +2052,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/background/background.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/background/background.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2062,7 +2062,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/background/background.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/background/background.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2072,7 +2072,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/background/background.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/background/background.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2082,7 +2082,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/background/background.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/background/background.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -2092,7 +2092,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/badge/badge.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2102,7 +2102,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/badge/badge.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2112,7 +2112,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/badge/badge.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2122,7 +2122,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/badge/badge.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/badge/badge.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -2132,7 +2132,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2142,7 +2142,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2152,7 +2152,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2162,7 +2162,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2172,7 +2172,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2182,7 +2182,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2192,7 +2192,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2202,7 +2202,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2212,7 +2212,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/button/button.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/button/button.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -2222,7 +2222,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2232,7 +2232,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2242,7 +2242,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2252,7 +2252,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2262,7 +2262,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/chat-bubble/chat-bubble.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -2272,7 +2272,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2282,7 +2282,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2292,7 +2292,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2302,7 +2302,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/disclaimer/disclaimer.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -2312,7 +2312,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/heading/heading.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/heading/heading.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2322,7 +2322,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/heading/heading.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/heading/heading.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2332,7 +2332,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/heading/heading.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/heading/heading.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2342,7 +2342,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/heading/heading.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/heading/heading.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2352,7 +2352,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/heading/heading.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/heading/heading.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -2362,7 +2362,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2372,7 +2372,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2382,7 +2382,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2392,7 +2392,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2402,7 +2402,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2412,7 +2412,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2422,7 +2422,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2432,7 +2432,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2442,7 +2442,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2452,7 +2452,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2462,7 +2462,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2472,7 +2472,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/icon/icon.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/icon/icon.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -2482,7 +2482,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2492,7 +2492,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2502,7 +2502,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2512,7 +2512,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input-checkbox/input-checkbox.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -2522,7 +2522,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2532,7 +2532,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2542,7 +2542,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2552,7 +2552,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input-dropdown/input-dropdown.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -2562,7 +2562,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input-radio/input-radio.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2572,7 +2572,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input-radio/input-radio.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2582,7 +2582,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input-radio/input-radio.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2592,7 +2592,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input-radio/input-radio.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input-radio/input-radio.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -2602,7 +2602,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2612,7 +2612,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2622,7 +2622,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2632,7 +2632,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2642,7 +2642,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2652,7 +2652,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2662,7 +2662,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2672,7 +2672,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2682,7 +2682,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2692,7 +2692,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/input/input.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/input/input.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -2702,7 +2702,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2712,7 +2712,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2722,7 +2722,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2732,7 +2732,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2742,7 +2742,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2752,7 +2752,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/logo/logo.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/logo/logo.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -2762,7 +2762,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/primitives.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2772,7 +2772,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/primitives.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2782,7 +2782,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/primitives/primitives.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/primitives/primitives.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
@@ -2792,7 +2792,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2802,7 +2802,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2812,7 +2812,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -2822,7 +2822,7 @@
                 "status": "low"
             },
             {
-                "filePath": "libs/agentj-design-system-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
+                "filePath": "libs/agent-j-components/src/lib/ui-components/chat-input/chat-input.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",

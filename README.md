@@ -1,4 +1,4 @@
-# Agentj Component Library
+# Agent J Utils
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
@@ -19,7 +19,7 @@ npx nx run agentj-design-system:storybook
 Generate component
 
 ```sh
-npx nx g aac-generator:component
+npx nx g agent-j-generator:component
 ```
 
 These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
@@ -98,6 +98,6 @@ And join the Nx community:
 - [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
 
 pnpm install --frozen-lockfile
-pnpm nx build agentj-components
+pnpm nx build agent-j-components
 npm login
-npm publish dist/libs/agentj-design-system-components --access public
+npm publish dist/libs/agent-j-components --access public

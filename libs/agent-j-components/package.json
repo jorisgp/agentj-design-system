@@ -1,0 +1,23 @@
+{
+  "name": "@agentj/agent-j-components",
+  "version": "0.0.1",
+  "description": "Agent J Design System ",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorisgp/agent-j-utils"
+  },
+  "bugs": {
+    "url": "https://github.com/jorisgp/agent-j-utils/issues"
+  },
+  "homepage": "https://github.com/jorisgp/agent-j-utils",
+  "peerDependencies": {
+    "@angular/common": "^21.1.0",
+    "@angular/core": "^21.1.0",
+    "@angular/forms": "^21.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false
+}
