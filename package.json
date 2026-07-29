@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "license": "MIT",
   "engines": {
-    "node": ">=22.12.0 <23"
+    "node": ">=24.0.0"
   },
   "scripts": {
     "build:components": "nx build agentj-components",
-    "pack:components": "npm pack dist/libs/agentj-design-system-components"
+    "pack:components": "npm pack dist/libs/agentj-design-system-components",
+    "test": "pnpm nx run-many --target=test --all"
   },
   "private": true,
   "pnpm": {
@@ -57,6 +58,7 @@
     "@swc/cli": "~0.8.0",
     "@swc/core": "~1.15.5",
     "@swc/helpers": "~0.5.18",
+    "@testing-library/angular": "^19.4.1",
     "@types/node": "20.19.9",
     "@typescript-eslint/utils": "^8.40.0",
     "@vitest/coverage-v8": "~4.0.0",

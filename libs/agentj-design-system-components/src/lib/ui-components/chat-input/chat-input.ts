@@ -9,7 +9,7 @@ import {
   ViewEncapsulation,
 } from "@angular/core";
 import { FormsModule } from "@angular/forms";
-import { IconButtonComponent } from "../../composites/icon-button/icon-button";
+import { IconButtonComponent } from "../../composites/icon-button";
 
 @Component({
   selector: "agentjds-chat-input",

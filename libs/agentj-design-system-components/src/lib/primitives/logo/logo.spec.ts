@@ -1,16 +1,20 @@
-import { ComponentFixture, TestBed } from "@angular/core/testing";
-import { LogoComponent } from "./logo";
+import { render } from "@testing-library/angular";
+import { beforeEach, describe, expect, it } from "vitest";
+import { LogoComponent } from ".";
 
 describe("LogoComponent", () => {
   let component: LogoComponent;
-  let fixture: ComponentFixture<LogoComponent>;
+  let fixture: Awaited<ReturnType<typeof render<LogoComponent>>>["fixture"];
+  let container: HTMLElement;
+
+  function queryElement<T extends Element = HTMLElement>(selector: string): T {
+    return container.querySelector(selector) as T;
+  }
 
   beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [LogoComponent],
-    }).compileComponents();
-
-    fixture = TestBed.createComponent(LogoComponent);
+    const rendered = await render(LogoComponent);
+    fixture = rendered.fixture;
+    container = rendered.container;
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -20,7 +24,7 @@ describe("LogoComponent", () => {
   });
 
   it("should render fallback wordmark when src is empty", () => {
-    const fallback = fixture.nativeElement.querySelector(".agentjds-logo__fallback");
+    const fallback = queryElement(".agentjds-logo__fallback");
     expect(fallback).toBeTruthy();
     expect(fallback.textContent).toContain("AgentJ");
   });
@@ -28,9 +32,9 @@ describe("LogoComponent", () => {
   it("should render image when src is provided", () => {
     fixture.componentRef.setInput("src", "/logo.svg");
     fixture.detectChanges();
-    const image = fixture.nativeElement.querySelector(
+    const image = queryElement<HTMLImageElement>(
       ".agentjds-logo__image",
-    ) as HTMLImageElement;
+    );
     expect(image.style.display).toBe("block");
     expect(image.getAttribute("src")).toContain("/logo.svg");
   });
@@ -38,7 +42,7 @@ describe("LogoComponent", () => {
   it("should apply size class", () => {
     fixture.componentRef.setInput("size", "lg");
     fixture.detectChanges();
-    const root = fixture.nativeElement.querySelector(".agentjds-logo");
+    const root = queryElement(".agentjds-logo");
     expect(root.classList.contains("agentjds-logo--lg")).toBe(true);
   });
 });

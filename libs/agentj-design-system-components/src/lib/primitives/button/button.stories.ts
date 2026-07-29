@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/angular";
-import { ButtonComponent } from "./button";
+import { ButtonComponent } from ".";
 
 const meta: Meta<ButtonComponent> = {
   component: ButtonComponent,

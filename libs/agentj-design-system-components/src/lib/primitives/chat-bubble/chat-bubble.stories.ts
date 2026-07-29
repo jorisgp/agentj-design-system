@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/angular";
-import { ChatBubbleComponent } from "./chat-bubble";
+import { ChatBubbleComponent } from ".";
 
 const meta: Meta<ChatBubbleComponent> = {
   component: ChatBubbleComponent,

@@ -48,6 +48,13 @@
           "optimization": false,
           "extractLicenses": false,
           "sourceMap": true
+        },
+        "test": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "styles": ["apps/agentj-design-system/src/styles.scss"],
+          "scripts": []
         }
       },
       "defaultConfiguration": "production"
@@ -70,7 +77,10 @@
     },
     "test": {
       "executor": "@angular/build:unit-test",
-      "options": {}
+      "options": {
+        "buildTarget": "agentj-design-system:build:test",
+        "watch": false
+      }
     },
     "serve-static": {
       "continuous": true,

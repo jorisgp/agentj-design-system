@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/angular";
-import { DropdownButtonComponent } from "./dropdown-button";
+import { DropdownButtonComponent } from ".";
 
 const options = [
   { label: "Claude Opus 4.1", value: "claude-opus-4-1" },

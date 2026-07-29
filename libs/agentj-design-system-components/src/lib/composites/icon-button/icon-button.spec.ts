@@ -1,16 +1,20 @@
-import { ComponentFixture, TestBed } from "@angular/core/testing";
-import { IconButtonComponent } from "./icon-button";
+import { render } from "@testing-library/angular";
+import { beforeEach, describe, expect, it, vi } from "vitest";
+import { IconButtonComponent } from ".";
 
 describe("IconButtonComponent", () => {
   let component: IconButtonComponent;
-  let fixture: ComponentFixture<IconButtonComponent>;
+  let fixture: Awaited<ReturnType<typeof render<IconButtonComponent>>>["fixture"];
+  let container: HTMLElement;
+
+  function queryElement<T extends Element = HTMLElement>(selector: string): T {
+    return container.querySelector(selector) as T;
+  }
 
   beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [IconButtonComponent],
-    }).compileComponents();
-
-    fixture = TestBed.createComponent(IconButtonComponent);
+    const rendered = await render(IconButtonComponent);
+    fixture = rendered.fixture;
+    container = rendered.container;
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -20,14 +24,14 @@ describe("IconButtonComponent", () => {
   });
 
   it("should render a button element", () => {
-    const button = fixture.nativeElement.querySelector("button");
+    const button = queryElement<HTMLButtonElement>("button");
     expect(button).toBeTruthy();
   });
 
   it("should apply variant class", () => {
     fixture.componentRef.setInput("variant", "primary");
     fixture.detectChanges();
-    const button = fixture.nativeElement.querySelector("button");
+    const button = queryElement<HTMLButtonElement>("button");
     expect(button.classList.contains("agentjds-icon-button--primary")).toBe(
       true,
     );
@@ -36,7 +40,7 @@ describe("IconButtonComponent", () => {
   it("should apply shape class", () => {
     fixture.componentRef.setInput("shape", "circle");
     fixture.detectChanges();
-    const button = fixture.nativeElement.querySelector("button");
+    const button = queryElement<HTMLButtonElement>("button");
     expect(button.classList.contains("agentjds-icon-button--circle")).toBe(
       true,
     );
@@ -45,14 +49,14 @@ describe("IconButtonComponent", () => {
   it("should be disabled when disabled input is true", () => {
     fixture.componentRef.setInput("disabled", true);
     fixture.detectChanges();
-    const button = fixture.nativeElement.querySelector("button");
+    const button = queryElement<HTMLButtonElement>("button");
     expect(button.disabled).toBe(true);
   });
 
   it("should emit clicked on click", () => {
     const spy = vi.fn();
     component.clicked.subscribe(spy);
-    fixture.nativeElement.querySelector("button").click();
+    queryElement("button").click();
     expect(spy).toHaveBeenCalled();
   });
 });

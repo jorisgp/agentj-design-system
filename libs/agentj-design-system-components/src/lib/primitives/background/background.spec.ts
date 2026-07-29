@@ -1,16 +1,20 @@
-import { ComponentFixture, TestBed } from "@angular/core/testing";
-import { BackgroundComponent } from "./background";
+import { render } from "@testing-library/angular";
+import { beforeEach, describe, expect, it } from "vitest";
+import { BackgroundComponent } from ".";
 
 describe("BackgroundComponent", () => {
   let component: BackgroundComponent;
-  let fixture: ComponentFixture<BackgroundComponent>;
+  let fixture: Awaited<ReturnType<typeof render<BackgroundComponent>>>["fixture"];
+  let container: HTMLElement;
+
+  function queryElement<T extends Element = HTMLElement>(selector: string): T {
+    return container.querySelector(selector) as T;
+  }
 
   beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [BackgroundComponent],
-    }).compileComponents();
-
-    fixture = TestBed.createComponent(BackgroundComponent);
+    const rendered = await render(BackgroundComponent);
+    fixture = rendered.fixture;
+    container = rendered.container;
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -20,14 +24,14 @@ describe("BackgroundComponent", () => {
   });
 
   it("should render background container", () => {
-    const background = fixture.nativeElement.querySelector(".agentjds-background");
+    const background = queryElement(".agentjds-background");
     expect(background).toBeTruthy();
   });
 
   it("should apply custom color", () => {
     fixture.componentRef.setInput("color", "#f4f7fb");
     fixture.detectChanges();
-    const background = fixture.nativeElement.querySelector(
+    const background = queryElement(
       ".agentjds-background",
     ) as HTMLElement;
     expect(background.style.backgroundColor).toBe("rgb(244, 247, 251)");

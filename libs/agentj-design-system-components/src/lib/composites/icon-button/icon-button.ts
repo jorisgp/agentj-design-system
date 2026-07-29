@@ -1,6 +1,6 @@
 import { Component, input, output, ViewEncapsulation } from "@angular/core";
-import { ButtonSize, ButtonVariant } from "../../primitives/button/button";
-import { IconComponent, IconName } from "../../primitives/icon/icon";
+import { ButtonSize, ButtonVariant } from "../../primitives/button";
+import { IconComponent, IconName } from "../../primitives/icon";
 
 export type IconButtonShape = "circle" | "square";
 

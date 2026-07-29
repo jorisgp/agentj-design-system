@@ -1,19 +1,15 @@
-import { TestBed } from "@angular/core/testing";
+import { render } from "@testing-library/angular";
+import { describe, expect, it } from "vitest";
 import { App } from "./app";
 import { NxWelcome } from "./nx-welcome";
 
 describe("App", () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [App, NxWelcome],
-    }).compileComponents();
-  });
-
   it("should render title", async () => {
-    const fixture = TestBed.createComponent(App);
-    await fixture.whenStable();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector("h1")?.textContent).toContain(
+    const { container } = await render(App, {
+      imports: [NxWelcome],
+    });
+
+    expect(container.querySelector("h1")?.textContent).toContain(
       "Welcome agentj-design-system",
     );
   });

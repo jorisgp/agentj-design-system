@@ -13,16 +13,15 @@
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-    "baseUrl": ".",
     "paths": {
-      "@aac-common": ["libs/common"],
-      "@aac-common/*": ["libs/common/*"],
-      "aac-generator": ["tools/aac-generator/src/index.ts"],
+      "@aac-common": ["./libs/common"],
+      "@aac-common/*": ["./libs/common/*"],
+      "aac-generator": ["./tools/aac-generator/src/index.ts"],
       "@agentj-design-system/aac-generator": [
-        "tools/aac-generator/src/index.ts"
+        "./tools/aac-generator/src/index.ts"
       ],
       "@agentj/agentj-design-system": [
-        "libs/agentj-design-system-components/src/index.ts"
+        "./libs/agentj-design-system-components/src/index.ts"
       ]
     }
   },

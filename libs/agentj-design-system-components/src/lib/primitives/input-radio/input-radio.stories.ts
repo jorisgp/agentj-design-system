@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/angular";
-import { InputRadioComponent } from "./input-radio";
+import { InputRadioComponent } from ".";
 
 const meta: Meta<InputRadioComponent> = {
   component: InputRadioComponent,

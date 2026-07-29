@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/angular";
-import { InputCheckboxComponent } from "./input-checkbox";
+import { InputCheckboxComponent } from ".";
 
 const meta: Meta<InputCheckboxComponent> = {
   component: InputCheckboxComponent,

@@ -7,8 +7,8 @@ import {
   signal,
   ViewEncapsulation,
 } from "@angular/core";
-import { ButtonSize, ButtonVariant } from "../../primitives/button/button";
-import { IconComponent } from "../../primitives/icon/icon";
+import { ButtonSize, ButtonVariant } from "../../primitives/button";
+import { IconComponent } from "../../primitives/icon";
 
 export interface DropdownButtonOption {
   label: string;

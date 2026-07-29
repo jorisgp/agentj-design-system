@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/angular";
-import { BackgroundComponent } from "./background";
+import { BackgroundComponent } from ".";
 
 const meta: Meta<BackgroundComponent> = {
   component: BackgroundComponent,

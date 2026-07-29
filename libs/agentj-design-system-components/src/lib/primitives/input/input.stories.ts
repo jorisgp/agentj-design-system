@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/angular";
-import { InputComponent } from "./input";
+import { InputComponent } from ".";
 
 const meta: Meta<InputComponent> = {
   component: InputComponent,

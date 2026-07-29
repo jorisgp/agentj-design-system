@@ -1,16 +1,20 @@
-import { ComponentFixture, TestBed } from "@angular/core/testing";
-import { ChatInputComponent } from "./chat-input";
+import { render } from "@testing-library/angular";
+import { beforeEach, describe, expect, it, vi } from "vitest";
+import { ChatInputComponent } from ".";
 
 describe("ChatInputComponent", () => {
   let component: ChatInputComponent;
-  let fixture: ComponentFixture<ChatInputComponent>;
+  let fixture: Awaited<ReturnType<typeof render<ChatInputComponent>>>["fixture"];
+  let container: HTMLElement;
+
+  function queryElement<T extends Element = HTMLElement>(selector: string): T {
+    return container.querySelector(selector) as T;
+  }
 
   beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [ChatInputComponent],
-    }).compileComponents();
-
-    fixture = TestBed.createComponent(ChatInputComponent);
+    const rendered = await render(ChatInputComponent);
+    fixture = rendered.fixture;
+    container = rendered.container;
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -20,14 +24,14 @@ describe("ChatInputComponent", () => {
   });
 
   it("should render a textarea", () => {
-    const textarea = fixture.nativeElement.querySelector("textarea");
+    const textarea = queryElement<HTMLTextAreaElement>("textarea");
     expect(textarea).toBeTruthy();
   });
 
   it("should apply the placeholder", () => {
     fixture.componentRef.setInput("placeholder", "Ask anything...");
     fixture.detectChanges();
-    const textarea = fixture.nativeElement.querySelector("textarea");
+    const textarea = queryElement<HTMLTextAreaElement>("textarea");
     expect(textarea.placeholder).toBe("Ask anything...");
   });
 
@@ -56,7 +60,7 @@ describe("ChatInputComponent", () => {
   it("should emit attachClicked when attach button is clicked", () => {
     const spy = vi.fn();
     component.attachClicked.subscribe(spy);
-    const attachBtn = fixture.nativeElement.querySelector(
+    const attachBtn = queryElement<HTMLButtonElement>(
       ".agentjds-chat-input__attach button",
     );
     attachBtn.click();

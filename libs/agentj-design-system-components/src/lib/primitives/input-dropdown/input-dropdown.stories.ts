@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/angular";
-import { InputDropdownComponent } from "./input-dropdown";
+import { InputDropdownComponent } from ".";
 
 const meta: Meta<InputDropdownComponent> = {
   component: InputDropdownComponent,

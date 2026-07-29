@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/angular";
-import { HeadingComponent } from "./heading";
+import { HeadingComponent } from ".";
 
 const meta: Meta<HeadingComponent> = {
   component: HeadingComponent,

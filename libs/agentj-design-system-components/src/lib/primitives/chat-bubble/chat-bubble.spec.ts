@@ -1,16 +1,20 @@
-import { ComponentFixture, TestBed } from "@angular/core/testing";
-import { ChatBubbleComponent } from "./chat-bubble";
+import { render } from "@testing-library/angular";
+import { beforeEach, describe, expect, it } from "vitest";
+import { ChatBubbleComponent } from ".";
 
 describe("ChatBubbleComponent", () => {
   let component: ChatBubbleComponent;
-  let fixture: ComponentFixture<ChatBubbleComponent>;
+  let fixture: Awaited<ReturnType<typeof render<ChatBubbleComponent>>>["fixture"];
+  let container: HTMLElement;
+
+  function queryElement<T extends Element = HTMLElement>(selector: string): T {
+    return container.querySelector(selector) as T;
+  }
 
   beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [ChatBubbleComponent],
-    }).compileComponents();
-
-    fixture = TestBed.createComponent(ChatBubbleComponent);
+    const rendered = await render(ChatBubbleComponent);
+    fixture = rendered.fixture;
+    container = rendered.container;
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -22,7 +26,7 @@ describe("ChatBubbleComponent", () => {
   it("should render the message text", () => {
     fixture.componentRef.setInput("message", "Hello world");
     fixture.detectChanges();
-    const message = fixture.nativeElement.querySelector(
+    const message = queryElement(
       ".agentjds-chat-bubble__message",
     );
     expect(message.textContent.trim()).toBe("Hello world");
@@ -31,7 +35,7 @@ describe("ChatBubbleComponent", () => {
   it("should apply outgoing class", () => {
     fixture.componentRef.setInput("direction", "outgoing");
     fixture.detectChanges();
-    const bubble = fixture.nativeElement.querySelector(".agentjds-chat-bubble");
+    const bubble = queryElement(".agentjds-chat-bubble");
     expect(bubble.classList.contains("agentjds-chat-bubble--outgoing")).toBe(
       true,
     );
@@ -41,7 +45,7 @@ describe("ChatBubbleComponent", () => {
     fixture.componentRef.setInput("author", "Sam");
     fixture.componentRef.setInput("timestamp", "11:20");
     fixture.detectChanges();
-    const meta = fixture.nativeElement.querySelector(
+    const meta = queryElement(
       ".agentjds-chat-bubble__meta",
     );
     expect(meta.textContent).toContain("Sam");

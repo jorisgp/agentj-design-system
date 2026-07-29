@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/angular";
-import { BadgeComponent } from "./badge";
+import { BadgeComponent } from ".";
 
 const meta: Meta<BadgeComponent> = {
   component: BadgeComponent,

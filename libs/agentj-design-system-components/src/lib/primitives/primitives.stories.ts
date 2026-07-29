@@ -1,10 +1,10 @@
 import { Meta, StoryObj, moduleMetadata } from "@storybook/angular";
-import { BadgeComponent } from "./badge/badge";
-import { BackgroundComponent } from "./background/background";
-import { DisclaimerComponent } from "./disclaimer/disclaimer";
-import { LogoComponent } from "./logo/logo";
-import { DropdownButtonComponent } from "../composites/dropdown-button/dropdown-button";
-import { ChatInputComponent } from "../ui-components/chat-input/chat-input";
+import { BadgeComponent } from ".";
+import { BackgroundComponent } from ".";
+import { DisclaimerComponent } from ".";
+import { LogoComponent } from ".";
+import { DropdownButtonComponent } from "../composites/dropdown-button";
+import { ChatInputComponent } from "../ui-components/chat-input";
 
 const meta: Meta = {
   title: "Primitives/Overview",

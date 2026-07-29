@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/angular";
-import { ChatInputComponent } from "./chat-input";
+import { ChatInputComponent } from ".";
 
 const meta: Meta<ChatInputComponent> = {
   component: ChatInputComponent,

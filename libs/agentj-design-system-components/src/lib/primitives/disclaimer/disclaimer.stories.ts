@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/angular";
-import { DisclaimerComponent } from "./disclaimer";
+import { DisclaimerComponent } from ".";
 
 const meta: Meta<DisclaimerComponent> = {
   component: DisclaimerComponent,
