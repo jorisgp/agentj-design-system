@@ -71,7 +71,7 @@ describe('runBranchNameCheck', () => {
       'Invalid branch name: invalid_branch',
     );
     expect(dependencies.log).toHaveBeenCalledWith(
-      'Use Gitflow: feature/name, bugfix/name, hotfix/name, release/1.2.3, support/name.',
+      'Use Gitflow: main, develop, feature/name, release/name, hotfix/name.',
     );
     expect(dependencies.exit).toHaveBeenCalledWith(1);
   });
@@ -86,6 +86,9 @@ describe('runBranchNameCheck', () => {
 
     expect(dependencies.log).toHaveBeenCalledWith('\nAllowed examples:');
     expect(dependencies.log).toHaveBeenCalledWith('  - feature/add-login-form');
+    expect(dependencies.log).toHaveBeenCalledWith(
+      '  - main: production-ready code. Releases are tagged here.',
+    );
     expect(dependencies.exit).toHaveBeenCalledWith(1);
   });
 });
@@ -93,14 +96,12 @@ describe('runBranchNameCheck', () => {
 describe('runBranchNameCheck branch validation', () => {
   it.each([
     'main',
-    'master',
     'develop',
     'feature/add-login-form',
-    'bugfix/fix-token-refresh',
     'hotfix/restore-production-login',
     'release/1.4.0',
     'release/1.4.0-beta.1',
-    'support/node-24-upgrade',
+    'release/components/20260101-01',
   ])('accepts %s', (branchName) => {
     const dependencies = createDependencies({
       argv: ['node', 'agentj-check-branch-name', branchName],
@@ -113,12 +114,15 @@ describe('runBranchNameCheck branch validation', () => {
 
   it.each([
     '',
+    'master',
     'feature',
     'feature/Add-login-form',
     'feature/add_login_form',
+    'bugfix/fix-token-refresh',
     'fix/token-refresh',
     'release/v1.4.0',
-    'release/one-four-zero',
+    'release/one_four_zero',
+    'support/node-24-upgrade',
     'develop/something',
   ])('rejects %s', (branchName) => {
     const dependencies = createDependencies({

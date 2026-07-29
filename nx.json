@@ -93,6 +93,18 @@
     }
   },
   "release": {
+    "version": {
+      "git": {
+        "commit": false,
+        "tag": false
+      }
+    },
+    "changelog": {
+      "git": {
+        "commit": false,
+        "tag": false
+      }
+    },
     "groups": {
       "components": {
         "projects": ["agent-j-components"],
