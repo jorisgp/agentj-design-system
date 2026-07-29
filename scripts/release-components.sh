@@ -6,7 +6,8 @@ GROUP="components"
 SOURCE_BRANCH="develop"
 TARGET_BRANCH="main"
 RELEASE_DATE="${RELEASE_DATE:-$(date +%F)}"
-RELEASE_BRANCH="release/components/${RELEASE_DATE}"
+RELEASE_BRANCH_BASE="release/components/${RELEASE_DATE}"
+RELEASE_BRANCH="${RELEASE_BRANCH_BASE}"
 PACKAGE_JSON="libs/agent-j-components/package.json"
 
 usage() {
@@ -48,18 +49,34 @@ esac
 RELEASE_NOTE="${2:-Prepare ${PROJECT} release}"
 CURRENT_BRANCH="$(git branch --show-current)"
 
+branch_exists() {
+  git rev-parse --verify "$1" >/dev/null 2>&1 ||
+    git ls-remote --exit-code --heads origin "$1" >/dev/null 2>&1
+}
+
+next_release_branch() {
+  local branch="${RELEASE_BRANCH_BASE}"
+  local index=1
+
+  while branch_exists "${branch}"; do
+    branch="$(printf '%s/%02d' "${RELEASE_BRANCH_BASE}" "${index}")"
+    index=$((index + 1))
+  done
+
+  echo "${branch}"
+}
+
 if [[ -n "$(git status --porcelain)" ]]; then
   echo "Working tree is not clean. Commit or stash changes before releasing." >&2
   exit 1
 fi
 
-if [[ "${CURRENT_BRANCH}" == "${RELEASE_BRANCH}" ]]; then
+if [[ "${CURRENT_BRANCH}" == "${RELEASE_BRANCH_BASE}" || "${CURRENT_BRANCH}" =~ ^${RELEASE_BRANCH_BASE}-[0-9][0-9]$ ]]; then
+  RELEASE_BRANCH="${CURRENT_BRANCH}"
   echo "Continuing on existing release branch: ${RELEASE_BRANCH}"
-elif git rev-parse --verify "${RELEASE_BRANCH}" >/dev/null 2>&1; then
-  echo "Release branch already exists: ${RELEASE_BRANCH}" >&2
-  echo "Check it out and rerun this command from that branch." >&2
-  exit 1
 else
+  RELEASE_BRANCH="$(next_release_branch)"
+
   if ! git rev-parse --verify "${SOURCE_BRANCH}" >/dev/null 2>&1; then
     git fetch origin "${SOURCE_BRANCH}:${SOURCE_BRANCH}"
   fi
@@ -83,10 +100,12 @@ pnpm nx release \
 pnpm nx release version \
   --groups "${GROUP}"
 
+VERSION="$(node -e "console.log(require('./${PACKAGE_JSON}').version)")"
+
 pnpm nx release changelog \
+  "${VERSION}" \
   --groups "${GROUP}"
 
-VERSION="$(node -e "console.log(require('./${PACKAGE_JSON}').version)")"
 TAG="${PROJECT}@${VERSION}"
 
 git add "${PACKAGE_JSON}" .nx/version-plans "libs/agent-j-components/CHANGELOG.md"
