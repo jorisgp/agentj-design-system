@@ -62,12 +62,25 @@ jobs:
           git commit -m "release(agent-j-components): ${{ steps.release.outputs.version }}"
           git push origin HEAD:${{ github.event.ref }}
 
-      - name: Open release PR
+      - name: Create or update release PR
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh pr create \
+          PR_NUMBER="$(gh pr list \
             --base main \
             --head "${{ github.event.ref }}" \
-            --title "Release agent-j-components ${{ steps.release.outputs.version }}" \
-            --body "Release agent-j-components ${{ steps.release.outputs.version }}"
+            --state open \
+            --json number \
+            --jq '.[0].number // empty')"
+
+          if [ -n "${PR_NUMBER}" ]; then
+            gh pr edit "${PR_NUMBER}" \
+              --title "Release agent-j-components ${{ steps.release.outputs.version }}" \
+              --body "Release agent-j-components ${{ steps.release.outputs.version }}"
+          else
+            gh pr create \
+              --base main \
+              --head "${{ github.event.ref }}" \
+              --title "Release agent-j-components ${{ steps.release.outputs.version }}" \
+              --body "Release agent-j-components ${{ steps.release.outputs.version }}"
+          fi

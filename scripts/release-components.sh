@@ -14,6 +14,7 @@ Usage:
 Environment:
   RELEASE_DATE=20260101  Override the release branch date.
   RELEASE_SEQUENCE=01    Override the release branch sequence.
+  SKIP_PR=1              Skip GitHub PR creation.
 USAGE
 }
 
@@ -43,11 +44,21 @@ git pull --ff-only origin "${SOURCE_BRANCH}"
 git switch -c "${RELEASE_BRANCH}"
 git push -u origin "${RELEASE_BRANCH}"
 
+if [[ "${SKIP_PR:-0}" != "1" ]] && command -v gh >/dev/null 2>&1; then
+  gh pr create \
+    --base main \
+    --head "${RELEASE_BRANCH}" \
+    --title "Release agent-j-components" \
+    --body "Release request for agent-j-components. GitHub Actions will add the generated version and changelog commit."
+else
+  echo "Open PR manually: ${RELEASE_BRANCH} -> main"
+fi
+
 cat <<NEXT_STEPS
 
 Release requested by creating:
 
   ${RELEASE_BRANCH}
 
-GitHub Actions will prepare the release PR.
+GitHub Actions will prepare the release commit and update the release PR.
 NEXT_STEPS
