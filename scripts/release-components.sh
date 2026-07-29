@@ -47,23 +47,22 @@ case "${BUMP}" in
 esac
 
 RELEASE_NOTE="${2:-Prepare ${PROJECT} release}"
-CURRENT_BRANCH="$(git branch --show-current)"
 
 branch_exists() {
   git rev-parse --verify "$1" >/dev/null 2>&1 ||
     git ls-remote --exit-code --heads origin "$1" >/dev/null 2>&1
 }
 
-next_release_branch() {
-  local branch="${RELEASE_BRANCH_BASE}"
-  local index=1
+delete_branch_if_exists() {
+  local branch="$1"
 
-  while branch_exists "${branch}"; do
-    branch="$(printf '%s--%02d' "${RELEASE_BRANCH_BASE}" "${index}")"
-    index=$((index + 1))
-  done
+  if git rev-parse --verify "${branch}" >/dev/null 2>&1; then
+    git branch -D "${branch}"
+  fi
 
-  echo "${branch}"
+  if git ls-remote --exit-code --heads origin "${branch}" >/dev/null 2>&1; then
+    git push origin --delete "${branch}"
+  fi
 }
 
 if [[ -n "$(git status --porcelain)" ]]; then
@@ -71,22 +70,21 @@ if [[ -n "$(git status --porcelain)" ]]; then
   exit 1
 fi
 
-if [[ "${CURRENT_BRANCH}" == "${RELEASE_BRANCH_BASE}" || "${CURRENT_BRANCH}" =~ ^${RELEASE_BRANCH_BASE}-[0-9][0-9]$ ]]; then
-  RELEASE_BRANCH="${CURRENT_BRANCH}"
-  echo "Continuing on existing release branch: ${RELEASE_BRANCH}"
-else
-  RELEASE_BRANCH="$(next_release_branch)"
-  echo "Creating release branch: ${RELEASE_BRANCH}"
-
-  if ! git rev-parse --verify "${SOURCE_BRANCH}" >/dev/null 2>&1; then
-    git fetch origin "${SOURCE_BRANCH}:${SOURCE_BRANCH}"
-  fi
-
-  git checkout "${SOURCE_BRANCH}"
-  git pull --ff-only origin "${SOURCE_BRANCH}"
-  git fetch origin "${TARGET_BRANCH}" --tags
-  git checkout -b "${RELEASE_BRANCH}"
+if ! git rev-parse --verify "${SOURCE_BRANCH}" >/dev/null 2>&1; then
+  git fetch origin "${SOURCE_BRANCH}:${SOURCE_BRANCH}"
 fi
+
+git checkout "${SOURCE_BRANCH}"
+git pull --ff-only origin "${SOURCE_BRANCH}"
+git fetch origin "${TARGET_BRANCH}" --tags
+
+if branch_exists "${RELEASE_BRANCH_BASE}"; then
+  echo "Deleting existing release branch: ${RELEASE_BRANCH_BASE}"
+  delete_branch_if_exists "${RELEASE_BRANCH_BASE}"
+fi
+
+echo "Creating temporary release branch: ${RELEASE_BRANCH}"
+git checkout -b "${RELEASE_BRANCH}"
 
 pnpm nx release plan "${BUMP}" \
   --groups "${GROUP}" \
@@ -102,6 +100,18 @@ pnpm nx release version \
   --groups "${GROUP}"
 
 VERSION="$(node -e "console.log(require('./${PACKAGE_JSON}').version)")"
+VERSIONED_RELEASE_BRANCH="${RELEASE_BRANCH_BASE}-${VERSION}"
+
+if branch_exists "${VERSIONED_RELEASE_BRANCH}"; then
+  echo "Versioned release branch already exists: ${VERSIONED_RELEASE_BRANCH}" >&2
+  exit 1
+fi
+
+if [[ "${RELEASE_BRANCH}" != "${VERSIONED_RELEASE_BRANCH}" ]]; then
+  echo "Renaming release branch to include generated version: ${VERSIONED_RELEASE_BRANCH}"
+  git branch -m "${VERSIONED_RELEASE_BRANCH}"
+  RELEASE_BRANCH="${VERSIONED_RELEASE_BRANCH}"
+fi
 
 pnpm nx release changelog \
   "${VERSION}" \
