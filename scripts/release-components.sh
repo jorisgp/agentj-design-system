@@ -4,7 +4,7 @@ set -euo pipefail
 SOURCE_BRANCH="develop"
 RELEASE_DATE="${RELEASE_DATE:-$(date +%Y%m%d)}"
 RELEASE_SEQUENCE="${RELEASE_SEQUENCE:-01}"
-RELEASE_BRANCH="release/components/${RELEASE_DATE}-${RELEASE_SEQUENCE}"
+RELEASE_BRANCH_PREFIX="release/components/${RELEASE_DATE}"
 
 usage() {
   cat <<'USAGE'
@@ -33,11 +33,29 @@ if [[ -n "$(git status --porcelain)" ]]; then
   exit 1
 fi
 
-if git rev-parse --verify "${RELEASE_BRANCH}" >/dev/null 2>&1 ||
-  git ls-remote --exit-code --heads origin "${RELEASE_BRANCH}" >/dev/null 2>&1; then
-  echo "Release branch already exists: ${RELEASE_BRANCH}" >&2
-  exit 1
-fi
+branch_exists() {
+  git rev-parse --verify "$1" >/dev/null 2>&1 ||
+    git ls-remote --exit-code --heads origin "$1" >/dev/null 2>&1
+}
+
+next_release_branch() {
+  local sequence_number=$((10#${RELEASE_SEQUENCE}))
+  local branch
+
+  while true; do
+    branch="$(printf '%s-%02d' "${RELEASE_BRANCH_PREFIX}" "${sequence_number}")"
+
+    if ! branch_exists "${branch}"; then
+      echo "${branch}"
+      return
+    fi
+
+    echo "Release branch already exists: ${branch}" >&2
+    sequence_number=$((sequence_number + 1))
+  done
+}
+
+RELEASE_BRANCH="$(next_release_branch)"
 
 git switch "${SOURCE_BRANCH}"
 git pull --ff-only origin "${SOURCE_BRANCH}"
