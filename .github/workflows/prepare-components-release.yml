@@ -41,7 +41,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Preview release
-        run: pnpm nx release patch --groups components --dry-run --skip-publish
+        run: pnpm nx release version patch --groups components --dry-run
 
       - name: Version package
         run: pnpm nx release version patch --groups components --stage-changes=false
