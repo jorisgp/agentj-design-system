@@ -1,6 +1,7 @@
 {
   "name": "agent-j-utils",
   "version": "0.0.0",
+  "packageManager": "pnpm@10.0.0",
   "license": "MIT",
   "engines": {
     "node": ">=24.0.0"
@@ -9,6 +10,7 @@
     "build:components": "nx build agent-j-components",
     "pack:components": "npm pack dist/libs/agent-j-components",
     "prepare": "husky",
+    "release:components": "scripts/release-components.sh",
     "test": "pnpm nx run-many --target=test --all"
   },
   "private": true,

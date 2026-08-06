@@ -1,0 +1,92 @@
+name: Finalize Components Release
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
+jobs:
+  finalize-components-release:
+    if: >
+      github.event.pull_request.merged == true &&
+      startsWith(github.event.pull_request.head.ref, 'release/components/')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+          registry-url: https://registry.npmjs.org
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Read release metadata
+        id: release
+        run: |
+          VERSION="$(node -e "console.log(require('./libs/agent-j-components/package.json').version)")"
+          NAME="$(node -e "console.log(require('./libs/agent-j-components/package.json').name)")"
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "name=${NAME}" >> "$GITHUB_OUTPUT"
+          echo "tag=agent-j-components@${VERSION}" >> "$GITHUB_OUTPUT"
+
+      - name: Create release tag
+        run: |
+          git tag "${{ steps.release.outputs.tag }}"
+          git push origin "${{ steps.release.outputs.tag }}"
+
+      - name: Build and test
+        run: |
+          pnpm nx test agent-j-components --skip-nx-cache
+          pnpm nx build agent-j-components --configuration=production --skip-nx-cache
+
+      - name: Set repository metadata for provenance
+        run: |
+          npm pkg set repository.type="git" --prefix dist/libs/agent-j-components
+          npm pkg set repository.url="https://github.com/jorisgp/agent-j-utils" --prefix dist/libs/agent-j-components
+          npm pkg set bugs.url="https://github.com/jorisgp/agent-j-utils/issues" --prefix dist/libs/agent-j-components
+          npm pkg set homepage="https://github.com/jorisgp/agent-j-utils" --prefix dist/libs/agent-j-components
+
+      - name: Check if version exists on npm
+        id: npm_check
+        run: |
+          if npm view "${{ steps.release.outputs.name }}@${{ steps.release.outputs.version }}" version >/dev/null 2>&1; then
+            echo "already_published=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "already_published=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish to npm
+        if: steps.npm_check.outputs.already_published != 'true'
+        run: npm publish dist/libs/agent-j-components --access public --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Open main to develop sync PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr create \
+            --base develop \
+            --head main \
+            --title "Sync main into develop after ${{ steps.release.outputs.tag }}" \
+            --body "Sync release ${{ steps.release.outputs.tag }} back into develop."

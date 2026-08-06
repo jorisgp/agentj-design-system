@@ -1,0 +1,86 @@
+name: Prepare Components Release
+
+on:
+  create:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  prepare-components-release:
+    if: >
+      github.event.ref_type == 'branch' &&
+      startsWith(github.event.ref, 'release/components/')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout release branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.ref }}
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Configure git author
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Preview release
+        run: pnpm nx release version patch --groups components --dry-run
+
+      - name: Version package
+        run: pnpm nx release version patch --groups components --stage-changes=false
+
+      - name: Read release version
+        id: release
+        run: |
+          VERSION="$(node -e "console.log(require('./libs/agent-j-components/package.json').version)")"
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "tag=agent-j-components@${VERSION}" >> "$GITHUB_OUTPUT"
+
+      - name: Generate changelog
+        run: pnpm nx release changelog "${{ steps.release.outputs.version }}" --groups components --stage-changes=false
+
+      - name: Commit release preparation
+        run: |
+          git add libs/agent-j-components/package.json libs/agent-j-components/CHANGELOG.md
+          git commit -m "release(agent-j-components): ${{ steps.release.outputs.version }}"
+          git push origin HEAD:${{ github.event.ref }}
+
+      - name: Create or update release PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PR_NUMBER="$(gh pr list \
+            --base main \
+            --head "${{ github.event.ref }}" \
+            --state open \
+            --json number \
+            --jq '.[0].number // empty')"
+
+          if [ -n "${PR_NUMBER}" ]; then
+            gh pr edit "${PR_NUMBER}" \
+              --title "Release agent-j-components ${{ steps.release.outputs.version }}" \
+              --body "Release agent-j-components ${{ steps.release.outputs.version }}"
+          else
+            gh pr create \
+              --base main \
+              --head "${{ github.event.ref }}" \
+              --title "Release agent-j-components ${{ steps.release.outputs.version }}" \
+              --body "Release agent-j-components ${{ steps.release.outputs.version }}"
+          fi

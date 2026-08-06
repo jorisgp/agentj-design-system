@@ -4,12 +4,7 @@ import { getLogMode, type LogMode } from '../log-mode/log-mode';
 
 type ExecFileSync = typeof execFileSync;
 
-export type GitflowBranchType =
-  | 'feature'
-  | 'bugfix'
-  | 'hotfix'
-  | 'release'
-  | 'support';
+export type GitflowBranchType = 'feature' | 'hotfix' | 'release';
 
 interface BranchNameValidationResult {
   valid: boolean;
@@ -17,31 +12,33 @@ interface BranchNameValidationResult {
   examples: readonly string[];
 }
 
-export const GITFLOW_BASE_BRANCHES = ['main', 'master', 'develop'] as const;
+export const GITFLOW_BASE_BRANCHES = ['main', 'develop'] as const;
 
-export const GITFLOW_BRANCH_TYPES = [
-  'feature',
-  'bugfix',
-  'hotfix',
-  'release',
-  'support',
-] as const;
+export const GITFLOW_BRANCH_TYPES = ['feature', 'hotfix', 'release'] as const;
 
 const branchSlugPattern = '[a-z0-9]+(?:-[a-z0-9]+)*';
+const branchPathPattern = `${branchSlugPattern}(?:/${branchSlugPattern})*`;
 const releaseVersionPattern =
   '\\d+\\.\\d+\\.\\d+(?:-[a-z0-9]+(?:\\.[a-z0-9]+)*)?';
 const gitflowBranchPattern = new RegExp(
-  `^(?:${GITFLOW_BASE_BRANCHES.join('|')}|(?:feature|bugfix|hotfix|support)\\/${branchSlugPattern}|release\\/${releaseVersionPattern})$`,
+  `^(?:${GITFLOW_BASE_BRANCHES.join('|')}|(?:feature|hotfix)\\/${branchSlugPattern}|release\\/(?:${releaseVersionPattern}|${branchPathPattern}))$`,
 );
 
 export const branchNameExamples = [
   'main',
   'develop',
   'feature/add-login-form',
-  'bugfix/fix-token-refresh',
   'hotfix/restore-production-login',
   'release/1.4.0',
-  'support/node-24-upgrade',
+  'release/components/20260101-01',
+] as const;
+
+export const gitflowBranchDescriptions = [
+  'main: production-ready code. Releases are tagged here.',
+  'develop: integration branch for the next release.',
+  'feature/*: individual features, branched from and merged into develop.',
+  'release/*: final testing and stabilization, branched from develop, then merged into both main and develop.',
+  'hotfix/*: urgent production fixes, branched from main, then merged into both main and develop.',
 ] as const;
 
 export interface BranchNameCheckDependencies {
@@ -67,7 +64,7 @@ function checkBranchName(branchName: string): BranchNameValidationResult {
     valid: false,
     message:
       `Branch name "${normalizedBranchName}" does not follow Gitflow. ` +
-      'Use main, master, develop, or a typed branch with a lowercase kebab-case name.',
+      'Use main, develop, feature/*, release/*, or hotfix/*.',
     examples: branchNameExamples,
   };
 }
@@ -100,13 +97,15 @@ export function runBranchNameCheck({
 
   if (mode === 'verbose') {
     log(result.message);
+    log('\nAllowed branches:');
+    gitflowBranchDescriptions.forEach((description) =>
+      log(`  - ${description}`),
+    );
     log('\nAllowed examples:');
     result.examples.forEach((example) => log(`  - ${example}`));
   } else {
     log(`Invalid branch name: ${branchName.trim()}`);
-    log(
-      'Use Gitflow: feature/name, bugfix/name, hotfix/name, release/1.2.3, support/name.',
-    );
+    log('Use Gitflow: main, develop, feature/name, release/name, hotfix/name.');
   }
 
   exit(1);
