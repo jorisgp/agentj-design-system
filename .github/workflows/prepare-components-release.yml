@@ -1,7 +1,15 @@
 name: Prepare Components Release
 
 on:
-  create:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      release_branch:
+        description: Release branch to prepare
+        required: true
 
 permissions:
   contents: write
@@ -10,14 +18,22 @@ permissions:
 jobs:
   prepare-components-release:
     if: >
-      github.event.ref_type == 'branch' &&
-      startsWith(github.event.ref, 'release/components/')
+      (
+        github.event_name == 'pull_request' &&
+        startsWith(github.event.pull_request.head.ref, 'release/components/')
+      ) ||
+      (
+        github.event_name == 'workflow_dispatch' &&
+        startsWith(inputs.release_branch, 'release/components/')
+      )
     runs-on: ubuntu-latest
+    env:
+      RELEASE_BRANCH: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.ref || inputs.release_branch }}
     steps:
       - name: Checkout release branch
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.ref }}
+          ref: ${{ env.RELEASE_BRANCH }}
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -60,7 +76,7 @@ jobs:
         run: |
           git add libs/agent-j-components/package.json libs/agent-j-components/CHANGELOG.md
           git commit -m "release(agent-j-components): ${{ steps.release.outputs.version }}"
-          git push origin HEAD:${{ github.event.ref }}
+          git push origin HEAD:${RELEASE_BRANCH}
 
       - name: Create or update release PR
         env:
@@ -68,7 +84,7 @@ jobs:
         run: |
           PR_NUMBER="$(gh pr list \
             --base main \
-            --head "${{ github.event.ref }}" \
+            --head "${RELEASE_BRANCH}" \
             --state open \
             --json number \
             --jq '.[0].number // empty')"
@@ -80,7 +96,7 @@ jobs:
           else
             gh pr create \
               --base main \
-              --head "${{ github.event.ref }}" \
+              --head "${RELEASE_BRANCH}" \
               --title "Release agent-j-components ${{ steps.release.outputs.version }}" \
               --body "Release agent-j-components ${{ steps.release.outputs.version }}"
           fi
