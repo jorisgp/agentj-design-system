@@ -18,6 +18,10 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: prepare-components-release-${{ github.event_name == 'push' && github.ref_name || github.event_name == 'pull_request' && github.event.pull_request.head.ref || inputs.release_branch }}
+  cancel-in-progress: false
+
 jobs:
   prepare-components-release:
     if: >
@@ -81,6 +85,8 @@ jobs:
         run: |
           git add libs/agent-j-components/package.json libs/agent-j-components/CHANGELOG.md
           git commit -m "release(agent-j-components): ${{ steps.release.outputs.version }}"
+          git fetch origin "${RELEASE_BRANCH}"
+          git rebase "origin/${RELEASE_BRANCH}"
           git push origin HEAD:${RELEASE_BRANCH}
 
       - name: Create or update release PR
