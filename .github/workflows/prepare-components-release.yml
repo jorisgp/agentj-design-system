@@ -1,6 +1,9 @@
 name: Prepare Components Release
 
 on:
+  push:
+    branches:
+      - release/components/**
   pull_request:
     types: [opened, synchronize, reopened]
     branches:
@@ -19,6 +22,10 @@ jobs:
   prepare-components-release:
     if: >
       (
+        github.event_name == 'push' &&
+        startsWith(github.ref_name, 'release/components/')
+      ) ||
+      (
         github.event_name == 'pull_request' &&
         startsWith(github.event.pull_request.head.ref, 'release/components/')
       ) ||
@@ -28,7 +35,7 @@ jobs:
       )
     runs-on: ubuntu-latest
     env:
-      RELEASE_BRANCH: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.ref || inputs.release_branch }}
+      RELEASE_BRANCH: ${{ github.event_name == 'push' && github.ref_name || github.event_name == 'pull_request' && github.event.pull_request.head.ref || inputs.release_branch }}
     steps:
       - name: Checkout release branch
         uses: actions/checkout@v4
@@ -39,8 +46,6 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 10
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
