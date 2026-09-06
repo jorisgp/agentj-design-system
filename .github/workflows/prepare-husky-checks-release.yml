@@ -80,11 +80,11 @@ jobs:
 
       - name: Preview release
         if: steps.preparation.outputs.already_prepared != 'true'
-        run: pnpm nx release version patch --groups husky-checks --dry-run
+        run: node scripts/release-group.mjs husky-checks version patch --dry-run
 
       - name: Version package
         if: steps.preparation.outputs.already_prepared != 'true'
-        run: pnpm nx release version patch --groups husky-checks --stage-changes=false
+        run: node scripts/release-group.mjs husky-checks version patch --stage-changes=false
 
       - name: Read release version
         id: release
@@ -95,7 +95,7 @@ jobs:
 
       - name: Generate changelog
         if: steps.preparation.outputs.already_prepared != 'true'
-        run: pnpm nx release changelog "${{ steps.release.outputs.version }}" --groups husky-checks --stage-changes=false
+        run: node scripts/release-group.mjs husky-checks changelog "${{ steps.release.outputs.version }}" --stage-changes=false
 
       - name: Commit release preparation
         if: steps.preparation.outputs.already_prepared != 'true'
