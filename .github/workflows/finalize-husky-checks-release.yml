@@ -12,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: finalize-components-release
+  group: finalize-husky-checks-release
   cancel-in-progress: false
 
 jobs:
