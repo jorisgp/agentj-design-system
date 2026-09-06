@@ -1,0 +1,148 @@
+name: Finalize Style Release
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
+concurrency:
+  group: finalize-components-release
+  cancel-in-progress: false
+
+jobs:
+  finalize-style-release:
+    if: >
+      github.event.pull_request.merged == true &&
+      startsWith(github.event.pull_request.head.ref, 'release/style/')
+    environment: npm-publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout release merge commit
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.pull_request.merge_commit_sha }}
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: pnpm
+          registry-url: https://registry.npmjs.org
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Read release metadata
+        id: release
+        run: |
+          VERSION="$(node -e "console.log(require('./libs/agent-j-style/package.json').version)")"
+          NAME="$(node -e "console.log(require('./libs/agent-j-style/package.json').name)")"
+          SCOPE="$(node -e "console.log(require('./libs/agent-j-style/package.json').name.split('/')[0])")"
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "name=${NAME}" >> "$GITHUB_OUTPUT"
+          echo "scope=${SCOPE}" >> "$GITHUB_OUTPUT"
+          echo "tag=agent-j-style@${VERSION}" >> "$GITHUB_OUTPUT"
+
+      - name: Build and test
+        run: |
+          pnpm nx lint agent-j-style --skip-nx-cache
+          pnpm nx build agent-j-style --skip-nx-cache
+
+      - name: Set repository metadata for provenance
+        run: |
+          npm pkg set repository.type="git" --prefix dist/libs/agent-j-style
+          npm pkg set repository.url="git+https://github.com/jorisgp/agent-j-utils.git" --prefix dist/libs/agent-j-style
+          npm pkg set bugs.url="https://github.com/jorisgp/agent-j-utils/issues" --prefix dist/libs/agent-j-style
+          npm pkg set homepage="https://github.com/jorisgp/agent-j-utils" --prefix dist/libs/agent-j-style
+
+      - name: Validate existing release tag
+        env:
+          RELEASE_TAG: ${{ steps.release.outputs.tag }}
+        run: |
+          if git show-ref --verify --quiet "refs/tags/${RELEASE_TAG}"; then
+            if [ "$(git rev-parse "refs/tags/${RELEASE_TAG}^{commit}")" != "$(git rev-parse HEAD)" ]; then
+              echo "::error::Release tag ${RELEASE_TAG} points to a different commit."
+              exit 1
+            fi
+          fi
+
+      - name: Check if version exists on npm
+        id: npm_check
+        env:
+          PACKAGE_NAME: ${{ steps.release.outputs.name }}
+          PACKAGE_VERSION: ${{ steps.release.outputs.version }}
+        run: |
+          node --input-type=module <<'NODE'
+          const name = encodeURIComponent(process.env.PACKAGE_NAME);
+          const version = encodeURIComponent(process.env.PACKAGE_VERSION);
+          const response = await fetch(`https://registry.npmjs.org/${name}/${version}`);
+          if (response.status !== 200 && response.status !== 404) {
+            throw new Error(`npm version lookup failed: HTTP ${response.status}`);
+          }
+          const { appendFileSync } = await import('node:fs');
+          appendFileSync(process.env.GITHUB_OUTPUT, `already_published=${response.status === 200}\n`);
+          NODE
+
+      - name: Verify npm authentication
+        if: steps.npm_check.outputs.already_published != 'true'
+        run: |
+          if [ -z "${NODE_AUTH_TOKEN:-}" ]; then
+            echo "::error::NPM_TOKEN is missing or unavailable to this workflow."
+            exit 1
+          fi
+          if ! npm whoami --registry=https://registry.npmjs.org; then
+            echo "::error::npm authentication failed. Check whether the NPM_TOKEN repository secret is expired, revoked, or invalid."
+            exit 1
+          fi
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish to npm
+        if: steps.npm_check.outputs.already_published != 'true'
+        run: npm publish dist/libs/agent-j-style --access public --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Create release tag
+        env:
+          # This automated tag push uses a detached merge SHA, not a branch.
+          HUSKY: '0'
+          RELEASE_TAG: ${{ steps.release.outputs.tag }}
+        run: |
+          if ! git show-ref --verify --quiet "refs/tags/${RELEASE_TAG}"; then
+            git tag "${RELEASE_TAG}" HEAD
+          fi
+          git push origin "refs/tags/${RELEASE_TAG}"
+
+      - name: Open main to develop sync PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: ${{ steps.release.outputs.tag }}
+        run: |
+          PR_URL="$(gh pr list --base develop --head main --state open --json url --jq '.[0].url // empty')"
+          if [ -n "${PR_URL}" ]; then
+            echo "Using existing sync PR: ${PR_URL}"
+            exit 0
+          fi
+          git fetch origin main develop
+          if git merge-base --is-ancestor origin/main origin/develop; then
+            echo "develop already contains main; no sync PR needed."
+            exit 0
+          fi
+          printf 'Sync release %s back into develop.\n' "${RELEASE_TAG}" > "${RUNNER_TEMP}/sync-release-pr.md"
+          gh pr create \
+            --base develop \
+            --head main \
+            --title "Sync main into develop after ${RELEASE_TAG}" \
+            --body-file "${RUNNER_TEMP}/sync-release-pr.md"

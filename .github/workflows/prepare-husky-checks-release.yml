@@ -1,0 +1,132 @@
+name: Prepare Husky Checks Release
+
+on:
+  push:
+    branches:
+      - release/husky-checks/**
+  workflow_dispatch:
+    inputs:
+      release_branch:
+        description: Release branch to prepare
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: prepare-husky-checks-release-${{ github.event_name == 'push' && github.ref_name || inputs.release_branch }}
+  cancel-in-progress: false
+
+jobs:
+  prepare-husky-checks-release:
+    if: >
+      (
+        github.event_name == 'push' &&
+        startsWith(github.ref_name, 'release/husky-checks/')
+      ) ||
+      (
+        github.event_name == 'workflow_dispatch' &&
+        startsWith(inputs.release_branch, 'release/husky-checks/')
+      )
+    runs-on: ubuntu-latest
+    env:
+      RELEASE_BRANCH: ${{ github.event_name == 'push' && github.ref_name || inputs.release_branch }}
+    steps:
+      - name: Checkout release branch
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ env.RELEASE_BRANCH }}
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Detect prepared release
+        id: preparation
+        run: |
+          git fetch origin main
+          VERSION="$(node -p "require('./libs/agent-j-husky-checks/package.json').version")"
+          SUBJECTS="$(git log --format=%s origin/main..HEAD -- libs/agent-j-husky-checks/package.json)"
+          if grep -Fxq "release(agent-j-husky-checks): ${VERSION}" <<< "${SUBJECTS}"; then
+            echo "already_prepared=true" >> "$GITHUB_OUTPUT"
+            echo "Keeping prepared release version ${VERSION}."
+          else
+            echo "already_prepared=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Verify clean release checkout
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "Release preparation requires a clean checkout."
+            git status --short
+            exit 1
+          fi
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Configure git author
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Preview release
+        if: steps.preparation.outputs.already_prepared != 'true'
+        run: pnpm nx release version patch --groups husky-checks --dry-run
+
+      - name: Version package
+        if: steps.preparation.outputs.already_prepared != 'true'
+        run: pnpm nx release version patch --groups husky-checks --stage-changes=false
+
+      - name: Read release version
+        id: release
+        run: |
+          VERSION="$(node -e "console.log(require('./libs/agent-j-husky-checks/package.json').version)")"
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "tag=agent-j-husky-checks@${VERSION}" >> "$GITHUB_OUTPUT"
+
+      - name: Generate changelog
+        if: steps.preparation.outputs.already_prepared != 'true'
+        run: pnpm nx release changelog "${{ steps.release.outputs.version }}" --groups husky-checks --stage-changes=false
+
+      - name: Commit release preparation
+        if: steps.preparation.outputs.already_prepared != 'true'
+        run: |
+          # The checkout was verified clean before setup. Include lockfile
+          # changes from installation and all generated release outputs.
+          git add --all
+          git commit -m "release(agent-j-husky-checks): ${{ steps.release.outputs.version }}"
+          git fetch origin "${RELEASE_BRANCH}"
+          git rebase "origin/${RELEASE_BRANCH}"
+          git push origin HEAD:${RELEASE_BRANCH}
+
+      - name: Create or update release PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PR_NUMBER="$(gh pr list \
+            --base main \
+            --head "${RELEASE_BRANCH}" \
+            --state open \
+            --json number \
+            --jq '.[0].number // empty')"
+
+          if [ -n "${PR_NUMBER}" ]; then
+            gh pr edit "${PR_NUMBER}" \
+              --title "Release agent-j-husky-checks ${{ steps.release.outputs.version }}" \
+              --body "Release agent-j-husky-checks ${{ steps.release.outputs.version }}"
+          else
+            gh pr create \
+              --base main \
+              --head "${RELEASE_BRANCH}" \
+              --title "Release agent-j-husky-checks ${{ steps.release.outputs.version }}" \
+              --body "Release agent-j-husky-checks ${{ steps.release.outputs.version }}"
+          fi

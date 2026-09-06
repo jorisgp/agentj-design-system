@@ -1,5 +1,5 @@
 {
-  "name": "@agentj/husky-checks",
+  "name": "@agent-j/husky-checks",
   "version": "0.0.1",
   "private": false,
   "type": "commonjs",
@@ -13,5 +13,12 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorisgp/agent-j-utils.git"
   }
 }

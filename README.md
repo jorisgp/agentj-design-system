@@ -101,3 +101,26 @@ pnpm install --frozen-lockfile
 pnpm nx build agent-j-components
 npm login
 npm publish dist/libs/agent-j-components --access public
+
+## Library releases
+
+| Command                     | Branch prefix           | npm package                   |
+| --------------------------- | ----------------------- | ----------------------------- |
+| `pnpm release:components`   | `release/components/`   | `@agent-j/agent-j-components` |
+| `pnpm release:husky-checks` | `release/husky-checks/` | `@agent-j/husky-checks`       |
+| `pnpm release:style`        | `release/style/`        | `@agent-j/agent-j-style`      |
+
+Start with a clean working tree. Each command branches from updated `develop`
+and pushes a release branch. Preparation adds a patch version and changelog
+commit and opens or updates its PR into `main`. Later commits keep the prepared
+version. Add version plans for release notes under `.nx/version-plans`.
+
+After merging, approve the `npm-publish` environment deployment. Finalization
+builds the exact merge commit, tests Husky Checks (or lints Style), publishes,
+tags that commit, and opens or reuses the sync PR into `develop`. All finalizers
+share a concurrency group. Retries skip published versions and verify existing
+tags match the merge commit.
+
+The `NPM_TOKEN` secret must grant package read/write access for all three packages
+under the npm `agent-j` organization. All workflows use the existing `npm-publish`
+approval environment. The release commands do not publish locally.

@@ -133,6 +133,20 @@
         "changelog": {
           "projectChangelogs": true
         }
+      },
+      "style": {
+        "projects": ["agent-j-style"],
+        "projectsRelationship": "independent",
+        "versionPlans": true,
+        "releaseTag": {
+          "pattern": "{projectName}@{version}"
+        },
+        "version": {
+          "updateDependents": "auto"
+        },
+        "changelog": {
+          "projectChangelogs": true
+        }
       }
     }
   },

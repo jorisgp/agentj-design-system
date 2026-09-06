@@ -1,4 +1,4 @@
-# @agentj/husky-checks
+# @agent-j/husky-checks
 
 Gitflow-oriented Husky checks for Agent J repositories.
 
