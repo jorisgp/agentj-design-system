@@ -4,10 +4,6 @@ on:
   push:
     branches:
       - release/components/**
-  pull_request:
-    types: [opened, synchronize, reopened]
-    branches:
-      - main
   workflow_dispatch:
     inputs:
       release_branch:
@@ -19,7 +15,7 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: prepare-components-release-${{ github.event_name == 'push' && github.ref_name || github.event_name == 'pull_request' && github.event.pull_request.head.ref || inputs.release_branch }}
+  group: prepare-components-release-${{ github.event_name == 'push' && github.ref_name || inputs.release_branch }}
   cancel-in-progress: false
 
 jobs:
@@ -30,16 +26,12 @@ jobs:
         startsWith(github.ref_name, 'release/components/')
       ) ||
       (
-        github.event_name == 'pull_request' &&
-        startsWith(github.event.pull_request.head.ref, 'release/components/')
-      ) ||
-      (
         github.event_name == 'workflow_dispatch' &&
         startsWith(inputs.release_branch, 'release/components/')
       )
     runs-on: ubuntu-latest
     env:
-      RELEASE_BRANCH: ${{ github.event_name == 'push' && github.ref_name || github.event_name == 'pull_request' && github.event.pull_request.head.ref || inputs.release_branch }}
+      RELEASE_BRANCH: ${{ github.event_name == 'push' && github.ref_name || inputs.release_branch }}
     steps:
       - name: Checkout release branch
         uses: actions/checkout@v7
@@ -47,6 +39,19 @@ jobs:
           ref: ${{ env.RELEASE_BRANCH }}
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Detect prepared release
+        id: preparation
+        run: |
+          git fetch origin main
+          VERSION="$(node -p "require('./libs/agent-j-components/package.json').version")"
+          SUBJECTS="$(git log --format=%s origin/main..HEAD -- libs/agent-j-components/package.json)"
+          if grep -Fxq "release(agent-j-components): ${VERSION}" <<< "${SUBJECTS}"; then
+            echo "already_prepared=true" >> "$GITHUB_OUTPUT"
+            echo "Keeping prepared release version ${VERSION}."
+          else
+            echo "already_prepared=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Verify clean release checkout
         run: |
@@ -74,9 +79,11 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Preview release
+        if: steps.preparation.outputs.already_prepared != 'true'
         run: pnpm nx release version patch --groups components --dry-run
 
       - name: Version package
+        if: steps.preparation.outputs.already_prepared != 'true'
         run: pnpm nx release version patch --groups components --stage-changes=false
 
       - name: Read release version
@@ -87,9 +94,11 @@ jobs:
           echo "tag=agent-j-components@${VERSION}" >> "$GITHUB_OUTPUT"
 
       - name: Generate changelog
+        if: steps.preparation.outputs.already_prepared != 'true'
         run: pnpm nx release changelog "${{ steps.release.outputs.version }}" --groups components --stage-changes=false
 
       - name: Commit release preparation
+        if: steps.preparation.outputs.already_prepared != 'true'
         run: |
           # The checkout was verified clean before setup. Include lockfile
           # changes from installation and all generated release outputs.
