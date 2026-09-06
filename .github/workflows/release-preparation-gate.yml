@@ -1,0 +1,60 @@
+name: Release Preparation Gate
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  release-preparation-gate:
+    name: Release preparation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout pull request
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Verify release preparation
+        env:
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
+        run: |
+          case "${HEAD_REF}" in
+            release/components/*)
+              PROJECT="agent-j-components"
+              PACKAGE_PATH="libs/agent-j-components"
+              ;;
+            release/husky-checks/*)
+              PROJECT="agent-j-husky-checks"
+              PACKAGE_PATH="libs/agent-j-husky-checks"
+              ;;
+            release/style/*)
+              PROJECT="agent-j-style"
+              PACKAGE_PATH="libs/agent-j-style"
+              ;;
+            *)
+              echo "Not a release branch; preparation is not required."
+              exit 0
+              ;;
+          esac
+
+          git fetch origin "${BASE_REF}"
+          VERSION="$(node -p "require('./${PACKAGE_PATH}/package.json').version")"
+          RELEASE_COMMIT="release(${PROJECT}): ${VERSION}"
+
+          if ! git log --format=%s "origin/${BASE_REF}..HEAD" -- "${PACKAGE_PATH}/package.json" | grep -Fxq "${RELEASE_COMMIT}"; then
+            echo "::error::The prepare stage has not completed for ${PROJECT} ${VERSION}."
+            exit 1
+          fi
+
+          if ! grep -Eq "^## ${VERSION} \(" "${PACKAGE_PATH}/CHANGELOG.md"; then
+            echo "::error::The generated changelog entry for ${PROJECT} ${VERSION} is missing."
+            exit 1
+          fi
+
+          echo "Verified prepared release ${PROJECT} ${VERSION}."
