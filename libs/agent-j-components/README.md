@@ -12,7 +12,7 @@ Build output:
 
 `dist/libs/agent-j-components`
 
-## Publish to npm
+## Publish to npm.
 
 1. Login once:
 
