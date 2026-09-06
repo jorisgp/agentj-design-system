@@ -43,14 +43,11 @@ jobs:
         run: |
           VERSION="$(node -e "console.log(require('./libs/agent-j-components/package.json').version)")"
           NAME="$(node -e "console.log(require('./libs/agent-j-components/package.json').name)")"
+          SCOPE="$(node -e "console.log(require('./libs/agent-j-components/package.json').name.split('/')[0])")"
           echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
           echo "name=${NAME}" >> "$GITHUB_OUTPUT"
+          echo "scope=${SCOPE}" >> "$GITHUB_OUTPUT"
           echo "tag=agent-j-components@${VERSION}" >> "$GITHUB_OUTPUT"
-
-      - name: Create release tag
-        run: |
-          git tag "${{ steps.release.outputs.tag }}"
-          git push origin "${{ steps.release.outputs.tag }}"
 
       - name: Build and test
         run: |
@@ -60,9 +57,16 @@ jobs:
       - name: Set repository metadata for provenance
         run: |
           npm pkg set repository.type="git" --prefix dist/libs/agent-j-components
-          npm pkg set repository.url="https://github.com/jorisgp/agent-j-utils" --prefix dist/libs/agent-j-components
+          npm pkg set repository.url="git+https://github.com/jorisgp/agent-j-utils.git" --prefix dist/libs/agent-j-components
           npm pkg set bugs.url="https://github.com/jorisgp/agent-j-utils/issues" --prefix dist/libs/agent-j-components
           npm pkg set homepage="https://github.com/jorisgp/agent-j-utils" --prefix dist/libs/agent-j-components
+
+      - name: Verify npm authentication
+        run: |
+          npm whoami
+          npm access ls-packages "${{ steps.release.outputs.scope }}" >/dev/null
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Check if version exists on npm
         id: npm_check
@@ -78,6 +82,17 @@ jobs:
         run: npm publish dist/libs/agent-j-components --access public --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Create release tag
+        run: |
+          if git rev-parse "${{ steps.release.outputs.tag }}" >/dev/null 2>&1; then
+            echo "Tag ${{ steps.release.outputs.tag }} already exists locally"
+          elif git ls-remote --exit-code --tags origin "refs/tags/${{ steps.release.outputs.tag }}" >/dev/null 2>&1; then
+            echo "Tag ${{ steps.release.outputs.tag }} already exists on origin"
+          else
+            git tag "${{ steps.release.outputs.tag }}"
+            git push origin "${{ steps.release.outputs.tag }}"
+          fi
 
       - name: Open main to develop sync PR
         env:

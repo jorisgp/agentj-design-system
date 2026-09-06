@@ -1,60 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@use '../../../libs/agent-j-style/src/tokens';
 
-:root {
-  --agentj-color-bg: #f7f8fc;
-  --agentj-color-surface: #ffffff;
-  --agentj-color-surface-raised: #f0f4fb;
-  --agentj-color-border: #d7dce5;
-  --agentj-color-text: #1c2434;
-  --agentj-color-text-muted: #5a6478;
-  --agentj-color-primary: #135ddd;
-  --agentj-color-primary-strong: #104cb9;
-  --agentj-color-success: #1a8f4c;
-  --agentj-color-warning: #9a6200;
-  --agentj-color-danger: #bf1d31;
-  --agentj-shadow-sm:
-    0 1px 2px rgba(16, 24, 40, 0.08), 0 1px 1px rgba(16, 24, 40, 0.04);
-  --agentj-shadow-md:
-    0 8px 20px rgba(16, 24, 40, 0.1), 0 2px 8px rgba(16, 24, 40, 0.06);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --agentj-color-bg: #0d1117;
-    --agentj-color-surface: #161b22;
-    --agentj-color-surface-raised: #1f2733;
-    --agentj-color-border: #2d3748;
-    --agentj-color-text: #e6edf3;
-    --agentj-color-text-muted: #8b949e;
-    --agentj-color-primary: #4d8ef8;
-    --agentj-color-primary-strong: #6aa3fa;
-    --agentj-color-success: #3fb950;
-    --agentj-color-warning: #d29922;
-    --agentj-color-danger: #f85149;
-    --agentj-shadow-sm:
-      0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.2);
-    --agentj-shadow-md:
-      0 8px 20px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 0, 0, 0.25);
-  }
-}
-
-.dark {
-  --agentj-color-bg: #0d1117;
-  --agentj-color-surface: #161b22;
-  --agentj-color-surface-raised: #1f2733;
-  --agentj-color-border: #2d3748;
-  --agentj-color-text: #e6edf3;
-  --agentj-color-text-muted: #8b949e;
-  --agentj-color-primary: #4d8ef8;
-  --agentj-color-primary-strong: #6aa3fa;
-  --agentj-color-success: #3fb950;
-  --agentj-color-warning: #d29922;
-  --agentj-color-danger: #f85149;
-  --agentj-shadow-sm:
-    0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.2);
-  --agentj-shadow-md:
-    0 8px 20px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 0, 0, 0.25);
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -73,7 +19,7 @@ body {
     radial-gradient(circle at 0 0, #f0f5ff 0%, transparent 46%),
     radial-gradient(circle at 100% 100%, #f8f2ff 0%, transparent 38%),
     var(--agentj-color-bg);
-  font-family: "Open Sans", Calibri, Arial, sans-serif;
+  font-family: 'Open Sans', Calibri, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
