@@ -11,6 +11,7 @@ on:
         required: true
 
 permissions:
+  actions: write
   contents: write
   pull-requests: write
 
@@ -130,3 +131,10 @@ jobs:
               --title "Release agent-j-style ${{ steps.release.outputs.version }}" \
               --body "Release agent-j-style ${{ steps.release.outputs.version }}"
           fi
+
+      # GITHUB_TOKEN pushes do not trigger push workflows. Dispatch the gate
+      # explicitly so its check runs against the prepared branch tip.
+      - name: Verify prepared release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run release-preparation-gate.yml --ref "${RELEASE_BRANCH}"
