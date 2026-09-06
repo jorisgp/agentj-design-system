@@ -48,6 +48,14 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Verify clean release checkout
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "Release preparation requires a clean checkout."
+            git status --short
+            exit 1
+          fi
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
 
@@ -64,14 +72,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-      - name: Verify clean release checkout
-        run: |
-          if [ -n "$(git status --porcelain)" ]; then
-            echo "Release preparation requires a clean checkout."
-            git status --short
-            exit 1
-          fi
 
       - name: Preview release
         run: pnpm nx release version patch --groups components --dry-run
@@ -91,8 +91,8 @@ jobs:
 
       - name: Commit release preparation
         run: |
-          # The checkout was verified clean before generation. Include all Nx
-          # outputs, including consumed version plans and dependency updates.
+          # The checkout was verified clean before setup. Include lockfile
+          # changes from installation and all generated release outputs.
           git add --all
           git commit -m "release(agent-j-components): ${{ steps.release.outputs.version }}"
           git fetch origin "${RELEASE_BRANCH}"
