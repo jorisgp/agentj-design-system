@@ -117,9 +117,10 @@ version. Add version plans for release notes under `.nx/version-plans`.
 
 After merging, approve the `npm-publish` environment deployment. Finalization
 builds the exact merge commit, tests Husky Checks (or lints Style), publishes,
-tags that commit, and opens or reuses the sync PR into `develop`. All finalizers
-share a concurrency group. Retries skip published versions and verify existing
-tags match the merge commit.
+tags that commit, and opens or reuses the sync PR into `develop`. Each package
+has its own concurrency group so independent releases do not cancel or queue
+behind one another. Retries skip published versions and verify existing tags
+match the merge commit.
 
 The `NPM_TOKEN` secret must grant package read/write access for all three packages
 under the npm `agent-j` organization. All workflows use the existing `npm-publish`
