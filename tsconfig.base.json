@@ -18,7 +18,7 @@
       "@aac-common/*": ["./libs/common/*"],
       "agent-j-generator": ["./tools/agent-j-generator/src/index.ts"],
       "@agentj/agent-j-generator": ["./tools/agent-j-generator/src/index.ts"],
-      "@agentj/husky-checks": ["./libs/agent-j-husky-checks/src/index.ts"],
+      "@agent-j/husky-checks": ["./libs/agent-j-husky-checks/src/index.ts"],
       "@agent-j/agent-j-components": ["./libs/agent-j-components/src/index.ts"]
     }
   },
