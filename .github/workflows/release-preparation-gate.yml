@@ -1,6 +1,11 @@
 name: Release Preparation Gate
 
 on:
+  push:
+    branches:
+      - release/components/**
+      - release/husky-checks/**
+      - release/style/**
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
     branches:
@@ -21,8 +26,8 @@ jobs:
 
       - name: Verify release preparation
         env:
-          BASE_REF: ${{ github.event.pull_request.base.ref }}
-          HEAD_REF: ${{ github.event.pull_request.head.ref }}
+          BASE_REF: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.ref || 'main' }}
+          HEAD_REF: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.ref || github.ref_name }}
         run: |
           case "${HEAD_REF}" in
             release/components/*)
