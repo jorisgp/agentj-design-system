@@ -1,6 +1,6 @@
 {
   "name": "@agent-j/style",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "style": "./src/tokens.css",
   "exports": {
