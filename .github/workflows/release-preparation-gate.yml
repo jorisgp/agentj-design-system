@@ -1,6 +1,7 @@
 name: Release Preparation Gate
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - release/components/**
