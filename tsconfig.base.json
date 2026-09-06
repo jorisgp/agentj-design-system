@@ -19,7 +19,9 @@
       "agent-j-generator": ["./tools/agent-j-generator/src/index.ts"],
       "@agentj/agent-j-generator": ["./tools/agent-j-generator/src/index.ts"],
       "@agentj/husky-checks": ["./libs/agent-j-husky-checks/src/index.ts"],
-      "@agentj/agent-j-components": ["./libs/agent-j-components/src/index.ts"]
+      "@agentj-nl/agent-j-components": [
+        "./libs/agent-j-components/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
