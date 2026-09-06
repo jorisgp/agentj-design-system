@@ -1,11 +1,11 @@
 {
   "name": "@agentj/agent-j-components",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "Agent J Design System ",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jorisgp/agent-j-utils"
+    "url": "git+https://github.com/jorisgp/agent-j-utils.git"
   },
   "bugs": {
     "url": "https://github.com/jorisgp/agent-j-utils/issues"

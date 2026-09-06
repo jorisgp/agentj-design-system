@@ -29,6 +29,9 @@ const conventionalCommitPattern = new RegExp(
   `^(?:${CONVENTIONAL_COMMIT_TYPES.join('|')})(?:\\([a-z0-9-]+\\))?!?: [a-z0-9].+`,
 );
 
+const mergeCommitPattern =
+  /^Merge (?:branch|branches|remote-tracking branch|remote-tracking branches|tag|tags|commit|commits|pull request) .+/;
+
 export const commitMessageExamples = [
   'feat(auth): add login form',
   'fix(api): handle expired tokens',
@@ -49,6 +52,14 @@ export function validateCommitMessage(
   commitMessage: string,
 ): CommitMessageValidationResult {
   const firstLine = commitMessage.trim().split(/\r?\n/, 1)[0];
+
+  if (mergeCommitPattern.test(firstLine)) {
+    return {
+      valid: true,
+      message: `Commit message "${firstLine}" is an allowed merge message.`,
+      examples: commitMessageExamples,
+    };
+  }
 
   if (conventionalCommitPattern.test(firstLine)) {
     return {

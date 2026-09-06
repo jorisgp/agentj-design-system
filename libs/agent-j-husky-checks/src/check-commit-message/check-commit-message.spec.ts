@@ -26,6 +26,19 @@ function createDependencies(
 }
 
 describe('runCommitMessageCheck', () => {
+  it('allows a Git-generated merge message without logging or exiting', () => {
+    const dependencies = createDependencies({
+      argv: ['node', 'agentj-check-commit-message', '.git/COMMIT_EDITMSG'],
+      commitMessage:
+        "Merge branch 'release/components/20260806-08' of https://github.com/jorisgp/agent-j-utils into release/components/20260806-08",
+    });
+
+    runCommitMessageCheck(dependencies);
+
+    expect(dependencies.log).not.toHaveBeenCalled();
+    expect(dependencies.exit).not.toHaveBeenCalled();
+  });
+
   it('reads and validates the commit message file', () => {
     const dependencies = createDependencies({
       argv: ['node', 'agentj-check-commit-message', '.git/COMMIT_EDITMSG'],
@@ -103,6 +116,21 @@ describe('runCommitMessageCheck', () => {
 
 describe('validateCommitMessage', () => {
   it.each([
+    "Merge branch 'develop'",
+    "Merge branches 'feature/one' and 'feature/two'",
+    "Merge remote-tracking branch 'origin/main' into develop",
+    "Merge remote-tracking branches 'origin/main' and 'origin/develop'",
+    "Merge tag 'v1.0.0'",
+    "Merge tags 'v1.0.0' and 'v2.0.0'",
+    "Merge commit 'abc123'",
+    "Merge commits 'abc123' and 'def456'",
+    'Merge pull request #42 from jorisgp/feature/example',
+    "Merge branch 'main'\r\n\r\n# Conflicts resolved.",
+  ])('accepts merge message %s', (commitMessage) => {
+    expect(validateCommitMessage(commitMessage).valid).toBe(true);
+  });
+
+  it.each([
     'feat(auth): add login form',
     'fix: handle expired tokens',
     'docs(readme): update usage',
@@ -121,6 +149,9 @@ describe('validateCommitMessage', () => {
     'feat(auth): Add login form',
     'fix:',
     'merge branch develop',
+    'Merge',
+    'Merge branch',
+    'Merge some changes',
   ])('rejects %s', (commitMessage) => {
     expect(validateCommitMessage(commitMessage).valid).toBe(false);
   });
