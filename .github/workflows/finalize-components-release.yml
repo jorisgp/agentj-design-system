@@ -19,17 +19,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: main
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: pnpm
@@ -63,8 +63,14 @@ jobs:
 
       - name: Verify npm authentication
         run: |
-          npm whoami
-          npm access ls-packages "${{ steps.release.outputs.scope }}" >/dev/null
+          if [ -z "${NODE_AUTH_TOKEN:-}" ]; then
+            echo "::error::NPM_TOKEN is missing or unavailable to this workflow."
+            exit 1
+          fi
+          if ! npm whoami --registry=https://registry.npmjs.org; then
+            echo "::error::npm authentication failed. Check whether the NPM_TOKEN repository secret is expired, revoked, or invalid."
+            exit 1
+          fi
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
