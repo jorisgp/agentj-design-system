@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jorisgp/agent-j-utils"
+    "url": "git+https://github.com/jorisgp/agent-j-utils.git"
   },
   "bugs": {
     "url": "https://github.com/jorisgp/agent-j-utils/issues"

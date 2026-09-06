@@ -1,0 +1,19 @@
+{
+  "name": "@agentj/agent-j-style",
+  "version": "0.0.1",
+  "license": "MIT",
+  "style": "./src/tokens.css",
+  "exports": {
+    "./tokens.css": "./src/tokens.css",
+    "./tailwind-preset": "./tailwind-preset.cjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src/tokens.css",
+    "tailwind-preset.cjs",
+    "README.md"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ]
+}
