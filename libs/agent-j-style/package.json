@@ -1,5 +1,5 @@
 {
-  "name": "@agent-j/agent-j-style",
+  "name": "@agent-j/style",
   "version": "0.0.2",
   "license": "MIT",
   "style": "./src/tokens.css",

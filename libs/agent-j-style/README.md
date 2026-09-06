@@ -7,7 +7,7 @@ Shared design tokens for Agent J. This framework-independent package contains th
 Import once in your global stylesheet:
 
 ```css
-@import '@agent-j/agent-j-style/tokens.css';
+@import '@agent-j/style/tokens.css';
 ```
 
 ```css
@@ -25,7 +25,7 @@ Tokens default to light mode, follow `prefers-color-scheme: dark`, and support a
 
 ```js
 module.exports = {
-  presets: [require('@agent-j/agent-j-style/tailwind-preset')],
+  presets: [require('@agent-j/style/tailwind-preset')],
   content: ['./src/**/*.{html,ts}'],
 };
 ```
