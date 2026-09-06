@@ -63,8 +63,14 @@ jobs:
 
       - name: Verify npm authentication
         run: |
-          npm whoami
-          npm access ls-packages "${{ steps.release.outputs.scope }}" >/dev/null
+          if [ -z "${NODE_AUTH_TOKEN:-}" ]; then
+            echo "::error::NPM_TOKEN is missing or unavailable to this workflow."
+            exit 1
+          fi
+          if ! npm whoami --registry=https://registry.npmjs.org; then
+            echo "::error::npm authentication failed. Check whether the NPM_TOKEN repository secret is expired, revoked, or invalid."
+            exit 1
+          fi
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
