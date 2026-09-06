@@ -12,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: finalize-components-release
+  group: finalize-style-release
   cancel-in-progress: false
 
 jobs:
