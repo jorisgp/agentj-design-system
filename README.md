@@ -104,11 +104,11 @@ npm publish dist/libs/agent-j-components --access public
 
 ## Library releases
 
-| Command                     | Branch prefix           | npm package                   |
-| --------------------------- | ----------------------- | ----------------------------- |
-| `pnpm release:components`   | `release/components/`   | `@agent-j/agent-j-components` |
-| `pnpm release:husky-checks` | `release/husky-checks/` | `@agent-j/husky-checks`       |
-| `pnpm release:style`        | `release/style/`        | `@agent-j/agent-j-style`      |
+| Command                     | Branch prefix           | npm package             |
+| --------------------------- | ----------------------- | ----------------------- |
+| `pnpm release:components`   | `release/components/`   | `@agent-j/components`   |
+| `pnpm release:husky-checks` | `release/husky-checks/` | `@agent-j/husky-checks` |
+| `pnpm release:style`        | `release/style/`        | `@agent-j/style`        |
 
 Start with a clean working tree. Each command branches from updated `develop`
 and pushes a release branch. Preparation adds a patch version and changelog
