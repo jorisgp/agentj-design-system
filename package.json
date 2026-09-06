@@ -10,8 +10,10 @@
     "build:components": "nx build agent-j-components",
     "pack:components": "npm pack dist/libs/agent-j-components",
     "prepare": "husky",
+    "test": "pnpm nx run-many --target=test --all",
     "release:components": "scripts/release-components.sh",
-    "test": "pnpm nx run-many --target=test --all"
+    "release:husky-checks": "scripts/release-husky-checks.sh",
+    "release:style": "scripts/release-style.sh"
   },
   "private": true,
   "pnpm": {

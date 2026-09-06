@@ -1,5 +1,5 @@
 {
-  "name": "@agentj/agent-j-style",
+  "name": "@agent-j/agent-j-style",
   "version": "0.0.1",
   "license": "MIT",
   "style": "./src/tokens.css",
@@ -15,5 +15,12 @@
   ],
   "sideEffects": [
     "**/*.css"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorisgp/agent-j-utils.git"
+  }
 }
