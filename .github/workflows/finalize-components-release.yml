@@ -11,17 +11,22 @@ permissions:
   pull-requests: write
   id-token: write
 
+concurrency:
+  group: finalize-components-release
+  cancel-in-progress: false
+
 jobs:
   finalize-components-release:
     if: >
       github.event.pull_request.merged == true &&
       startsWith(github.event.pull_request.head.ref, 'release/components/')
+    environment: npm-publish
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
+      - name: Checkout release merge commit
         uses: actions/checkout@v7
         with:
-          ref: main
+          ref: ${{ github.event.pull_request.merge_commit_sha }}
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -61,7 +66,36 @@ jobs:
           npm pkg set bugs.url="https://github.com/jorisgp/agent-j-utils/issues" --prefix dist/libs/agent-j-components
           npm pkg set homepage="https://github.com/jorisgp/agent-j-utils" --prefix dist/libs/agent-j-components
 
+      - name: Validate existing release tag
+        env:
+          RELEASE_TAG: ${{ steps.release.outputs.tag }}
+        run: |
+          if git show-ref --verify --quiet "refs/tags/${RELEASE_TAG}"; then
+            if [ "$(git rev-parse "refs/tags/${RELEASE_TAG}^{commit}")" != "$(git rev-parse HEAD)" ]; then
+              echo "::error::Release tag ${RELEASE_TAG} points to a different commit."
+              exit 1
+            fi
+          fi
+
+      - name: Check if version exists on npm
+        id: npm_check
+        env:
+          PACKAGE_NAME: ${{ steps.release.outputs.name }}
+          PACKAGE_VERSION: ${{ steps.release.outputs.version }}
+        run: |
+          node --input-type=module <<'NODE'
+          const name = encodeURIComponent(process.env.PACKAGE_NAME);
+          const version = encodeURIComponent(process.env.PACKAGE_VERSION);
+          const response = await fetch(`https://registry.npmjs.org/${name}/${version}`);
+          if (response.status !== 200 && response.status !== 404) {
+            throw new Error(`npm version lookup failed: HTTP ${response.status}`);
+          }
+          const { appendFileSync } = await import('node:fs');
+          appendFileSync(process.env.GITHUB_OUTPUT, `already_published=${response.status === 200}\n`);
+          NODE
+
       - name: Verify npm authentication
+        if: steps.npm_check.outputs.already_published != 'true'
         run: |
           if [ -z "${NODE_AUTH_TOKEN:-}" ]; then
             echo "::error::NPM_TOKEN is missing or unavailable to this workflow."
@@ -74,15 +108,6 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Check if version exists on npm
-        id: npm_check
-        run: |
-          if npm view "${{ steps.release.outputs.name }}@${{ steps.release.outputs.version }}" version >/dev/null 2>&1; then
-            echo "already_published=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "already_published=false" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Publish to npm
         if: steps.npm_check.outputs.already_published != 'true'
         run: npm publish dist/libs/agent-j-components --access public --provenance
@@ -90,22 +115,34 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Create release tag
+        env:
+          # This automated tag push uses a detached merge SHA, not a branch.
+          HUSKY: '0'
+          RELEASE_TAG: ${{ steps.release.outputs.tag }}
         run: |
-          if git rev-parse "${{ steps.release.outputs.tag }}" >/dev/null 2>&1; then
-            echo "Tag ${{ steps.release.outputs.tag }} already exists locally"
-          elif git ls-remote --exit-code --tags origin "refs/tags/${{ steps.release.outputs.tag }}" >/dev/null 2>&1; then
-            echo "Tag ${{ steps.release.outputs.tag }} already exists on origin"
-          else
-            git tag "${{ steps.release.outputs.tag }}"
-            git push origin "${{ steps.release.outputs.tag }}"
+          if ! git show-ref --verify --quiet "refs/tags/${RELEASE_TAG}"; then
+            git tag "${RELEASE_TAG}" HEAD
           fi
+          git push origin "refs/tags/${RELEASE_TAG}"
 
       - name: Open main to develop sync PR
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: ${{ steps.release.outputs.tag }}
         run: |
+          PR_URL="$(gh pr list --base develop --head main --state open --json url --jq '.[0].url // empty')"
+          if [ -n "${PR_URL}" ]; then
+            echo "Using existing sync PR: ${PR_URL}"
+            exit 0
+          fi
+          git fetch origin main develop
+          if git merge-base --is-ancestor origin/main origin/develop; then
+            echo "develop already contains main; no sync PR needed."
+            exit 0
+          fi
+          printf 'Sync release %s back into develop.\n' "${RELEASE_TAG}" > "${RUNNER_TEMP}/sync-release-pr.md"
           gh pr create \
             --base develop \
             --head main \
-            --title "Sync main into develop after ${{ steps.release.outputs.tag }}" \
-            --body "Sync release ${{ steps.release.outputs.tag }} back into develop."
+            --title "Sync main into develop after ${RELEASE_TAG}" \
+            --body-file "${RUNNER_TEMP}/sync-release-pr.md"

@@ -26,7 +26,7 @@
           "node_modules/@agentj/agentj-design-system-style/dist/foundations.min.css",
           "node_modules/@agentj/agentj-design-system-style/dist/style.min.css"
         ],
-        "scripts": ["@agentj/agent-j-components/index.js"]
+        "scripts": ["@agent-j/agent-j-components/index.js"]
       },
       "configurations": {
         "production": {

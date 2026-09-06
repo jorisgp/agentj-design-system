@@ -1,4 +1,4 @@
-# @agentj/agent-j-components
+# @agent-j/agent-j-components
 
 Angular component library for the AGENTJ design system.
 
@@ -35,5 +35,5 @@ npm publish dist/libs/agent-j-components --access public
 ## Use in another app
 
 ```sh
-npm install @agentj/agent-j-components
+npm install @agent-j/agent-j-components
 ```
