@@ -80,11 +80,11 @@ jobs:
 
       - name: Preview release
         if: steps.preparation.outputs.already_prepared != 'true'
-        run: pnpm nx release version patch --groups components --dry-run
+        run: node scripts/release-group.mjs components version patch --dry-run
 
       - name: Version package
         if: steps.preparation.outputs.already_prepared != 'true'
-        run: pnpm nx release version patch --groups components --stage-changes=false
+        run: node scripts/release-group.mjs components version patch --stage-changes=false
 
       - name: Read release version
         id: release
@@ -95,7 +95,7 @@ jobs:
 
       - name: Generate changelog
         if: steps.preparation.outputs.already_prepared != 'true'
-        run: pnpm nx release changelog "${{ steps.release.outputs.version }}" --groups components --stage-changes=false
+        run: node scripts/release-group.mjs components changelog "${{ steps.release.outputs.version }}" --stage-changes=false
 
       - name: Commit release preparation
         if: steps.preparation.outputs.already_prepared != 'true'
